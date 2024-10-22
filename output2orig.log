@@ -1,0 +1,2686 @@
+nohup: ignoring input
+/scratch/pranjal/myenv/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/scratch/pranjal/myenv/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/scratch/pranjal/DEN/den_gen2.py:48: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  resnet.load_state_dict(torch.load(backbone_wts))
+2024-10-14T20:53:01IST root         INFO     Epoch 1/500
+2024-10-14T20:53:01IST root         INFO     ----------
+PyTorch Version:  2.4.1+cu118
+Preparing experiment directory...
+Device:  cuda
+Params to learn:
+	 deconv.0.0.weight
+	 deconv.0.0.bias
+	 deconv.0.1.weight
+	 deconv.0.1.bias
+	 deconv.0.3.weight
+	 deconv.0.3.bias
+	 deconv.0.4.weight
+	 deconv.0.4.bias
+	 deconv.0.6.weight
+	 deconv.0.6.bias
+	 deconv.0.7.weight
+	 deconv.0.7.bias
+	 deconv.0.9.weight
+	 deconv.0.9.bias
+	 deconv.0.10.weight
+	 deconv.0.10.bias
+	 deconv.0.12.weight
+	 deconv.0.12.bias
+	 deconv.0.13.weight
+	 deconv.0.13.bias
+	 deconv.1.0.weight
+	 deconv.1.0.bias
+	 deconv.1.1.weight
+	 deconv.1.1.bias
+	 deconv.1.3.weight
+	 deconv.1.3.bias
+	 deconv.1.4.weight
+	 deconv.1.4.bias
+	 deconv.1.6.weight
+	 deconv.1.6.bias
+	 deconv.1.7.weight
+	 deconv.1.7.bias
+	 deconv.1.9.weight
+	 deconv.1.9.bias
+	 deconv.1.10.weight
+	 deconv.1.10.bias
+	 deconv.1.12.weight
+	 deconv.1.12.bias
+	 deconv.1.13.weight
+	 deconv.1.13.bias
+	 deconv.2.0.weight
+	 deconv.2.0.bias
+	 deconv.2.1.weight
+	 deconv.2.1.bias
+	 deconv.2.3.weight
+	 deconv.2.3.bias
+	 deconv.2.4.weight
+	 deconv.2.4.bias
+	 deconv.2.6.weight
+	 deconv.2.6.bias
+	 deconv.2.7.weight
+	 deconv.2.7.bias
+	 deconv.2.9.weight
+	 deconv.2.9.bias
+	 deconv.2.10.weight
+	 deconv.2.10.bias
+	 deconv.2.12.weight
+	 deconv.2.12.bias
+	 deconv.2.13.weight
+	 deconv.2.13.bias
+	 deconv.3.0.weight
+	 deconv.3.0.bias
+	 deconv.3.1.weight
+	 deconv.3.1.bias
+	 deconv.3.3.weight
+	 deconv.3.3.bias
+	 deconv.3.4.weight
+	 deconv.3.4.bias
+	 deconv.3.6.weight
+	 deconv.3.6.bias
+	 deconv.3.7.weight
+	 deconv.3.7.bias
+	 deconv.3.9.weight
+	 deconv.3.9.bias
+	 deconv.3.10.weight
+	 deconv.3.10.bias
+	 deconv.3.12.weight
+	 deconv.3.12.bias
+	 deconv.3.13.weight
+	 deconv.3.13.bias
+	 aux_modules.0.aux.0.weight
+	 aux_modules.0.aux.0.bias
+	 aux_modules.0.aux.3.weight
+	 aux_modules.0.aux.3.bias
+	 aux_modules.0.aux.downsample.weight
+	 aux_modules.0.aux.downsample.bias
+	 aux_modules.1.aux.0.weight
+	 aux_modules.1.aux.0.bias
+	 aux_modules.1.aux.3.weight
+	 aux_modules.1.aux.3.bias
+	 aux_modules.1.aux.downsample.weight
+	 aux_modules.1.aux.downsample.bias
+	 aux_modules.2.aux.0.weight
+	 aux_modules.2.aux.0.bias
+	 aux_modules.2.aux.3.weight
+	 aux_modules.2.aux.3.bias
+	 aux_modules.2.aux.downsample.weight
+	 aux_modules.2.aux.downsample.bias
+	 aux_modules.3.aux.0.weight
+	 aux_modules.3.aux.0.bias
+	 aux_modules.3.aux.3.weight
+	 aux_modules.3.aux.3.bias
+	 aux_modules.3.aux.downsample.weight
+	 aux_modules.3.aux.downsample.bias
+	 aux_modules.4.aux.0.weight
+	 aux_modules.4.aux.0.bias
+	 aux_modules.4.aux.3.weight
+	 aux_modules.4.aux.3.bias
+	 aux_modules.4.aux.downsample.weight
+	 aux_modules.4.aux.downsample.bias
+	 aux_modules.5.aux.0.weight
+	 aux_modules.5.aux.0.bias
+	 aux_modules.5.aux.3.weight
+	 aux_modules.5.aux.3.bias
+	 aux_modules.5.aux.downsample.weight
+	 aux_modules.5.aux.downsample.bias
+	 aux_modules.6.aux.0.weight
+	 aux_modules.6.aux.0.bias
+	 aux_modules.6.aux.3.weight
+	 aux_modules.6.aux.3.bias
+	 aux_modules.6.aux.downsample.weight
+	 aux_modules.6.aux.downsample.bias
+	 aux_modules.7.aux.0.weight
+	 aux_modules.7.aux.0.bias
+	 aux_modules.7.aux.3.weight
+	 aux_modules.7.aux.3.bias
+	 aux_modules.7.aux.downsample.weight
+	 aux_modules.7.aux.downsample.bias
+	 aux_modules.8.aux.0.weight
+	 aux_modules.8.aux.0.bias
+	 aux_modules.8.aux.3.weight
+	 aux_modules.8.aux.3.bias
+	 aux_modules.8.aux.downsample.weight
+	 aux_modules.8.aux.downsample.bias
+	 aux_modules.9.aux.0.weight
+	 aux_modules.9.aux.0.bias
+	 aux_modules.9.aux.3.weight
+	 aux_modules.9.aux.3.bias
+	 aux_modules.9.aux.downsample.weight
+	 aux_modules.9.aux.downsample.bias
+	 aux_modules.10.aux.0.weight
+	 aux_modules.10.aux.0.bias
+	 aux_modules.10.aux.3.weight
+	 aux_modules.10.aux.3.bias
+	 aux_modules.10.aux.downsample.weight
+	 aux_modules.10.aux.downsample.bias
+	 aux_modules.11.aux.0.weight
+	 aux_modules.11.aux.0.bias
+	 aux_modules.11.aux.3.weight
+	 aux_modules.11.aux.3.bias
+	 aux_modules.11.aux.downsample.weight
+	 aux_modules.11.aux.downsample.bias
+	 aux_modules.12.aux.0.weight
+	 aux_modules.12.aux.0.bias
+	 aux_modules.12.aux.3.weight
+	 aux_modules.12.aux.3.bias
+	 aux_modules.12.aux.downsample.weight
+	 aux_modules.12.aux.downsample.bias
+	 aux_modules.13.aux.0.weight
+	 aux_modules.13.aux.0.bias
+	 aux_modules.13.aux.3.weight
+	 aux_modules.13.aux.3.bias
+	 aux_modules.14.aux.0.weight
+	 aux_modules.14.aux.0.bias
+	 aux_modules.14.aux.3.weight
+	 aux_modules.14.aux.3.bias
+	 aux_modules.15.aux.0.weight
+	 aux_modules.15.aux.0.bias
+	 aux_modules.15.aux.3.weight
+	 aux_modules.15.aux.3.bias
+2024-10-14T20:53:25IST root         INFO     Training:   Loss: 167.7340 RMSE: 12.9512
+2024-10-14T20:53:27IST root         INFO     Validation: Loss: 65.9376 RMSE: 8.1202
+2024-10-14T20:53:27IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T20:53:27IST root         INFO     Epoch 2/500
+2024-10-14T20:53:27IST root         INFO     ----------
+2024-10-14T20:53:50IST root         INFO     Training:   Loss: 44.6206 RMSE: 6.6799
+2024-10-14T20:53:52IST root         INFO     Validation: Loss: 40.8698 RMSE: 6.3929
+2024-10-14T20:53:52IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:53:52IST root         INFO     Epoch 3/500
+2024-10-14T20:53:52IST root         INFO     ----------
+2024-10-14T20:54:15IST root         INFO     Training:   Loss: 30.6091 RMSE: 5.5326
+2024-10-14T20:54:18IST root         INFO     Validation: Loss: 37.3451 RMSE: 6.1111
+2024-10-14T20:54:18IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:54:18IST root         INFO     Epoch 4/500
+2024-10-14T20:54:18IST root         INFO     ----------
+2024-10-14T20:54:41IST root         INFO     Training:   Loss: 27.3682 RMSE: 5.2315
+2024-10-14T20:54:43IST root         INFO     Validation: Loss: 35.9868 RMSE: 5.9989
+2024-10-14T20:54:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:54:43IST root         INFO     Epoch 5/500
+2024-10-14T20:54:43IST root         INFO     ----------
+2024-10-14T20:55:06IST root         INFO     Training:   Loss: 26.6666 RMSE: 5.1640
+2024-10-14T20:55:09IST root         INFO     Validation: Loss: 35.4431 RMSE: 5.9534
+2024-10-14T20:55:09IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:55:09IST root         INFO     Epoch 6/500
+2024-10-14T20:55:09IST root         INFO     ----------
+2024-10-14T20:55:31IST root         INFO     Training:   Loss: 26.0960 RMSE: 5.1084
+2024-10-14T20:55:33IST root         INFO     Validation: Loss: 35.1034 RMSE: 5.9248
+2024-10-14T20:55:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:55:34IST root         INFO     Epoch 7/500
+2024-10-14T20:55:34IST root         INFO     ----------
+2024-10-14T20:55:57IST root         INFO     Training:   Loss: 25.6265 RMSE: 5.0623
+2024-10-14T20:56:00IST root         INFO     Validation: Loss: 33.9833 RMSE: 5.8295
+2024-10-14T20:56:00IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T20:56:00IST root         INFO     Epoch 8/500
+2024-10-14T20:56:00IST root         INFO     ----------
+2024-10-14T20:56:23IST root         INFO     Training:   Loss: 24.9893 RMSE: 4.9989
+2024-10-14T20:56:25IST root         INFO     Validation: Loss: 33.7161 RMSE: 5.8066
+2024-10-14T20:56:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T20:56:26IST root         INFO     Epoch 9/500
+2024-10-14T20:56:26IST root         INFO     ----------
+2024-10-14T20:56:49IST root         INFO     Training:   Loss: 24.5805 RMSE: 4.9579
+2024-10-14T20:56:51IST root         INFO     Validation: Loss: 32.5892 RMSE: 5.7087
+2024-10-14T20:56:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:56:51IST root         INFO     Epoch 10/500
+2024-10-14T20:56:51IST root         INFO     ----------
+2024-10-14T20:57:14IST root         INFO     Training:   Loss: 23.8649 RMSE: 4.8852
+2024-10-14T20:57:17IST root         INFO     Validation: Loss: 31.6290 RMSE: 5.6240
+2024-10-14T20:57:17IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:57:17IST root         INFO     Epoch 11/500
+2024-10-14T20:57:17IST root         INFO     ----------
+2024-10-14T20:57:40IST root         INFO     Training:   Loss: 23.5026 RMSE: 4.8480
+2024-10-14T20:57:42IST root         INFO     Validation: Loss: 30.7385 RMSE: 5.5442
+2024-10-14T20:57:42IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:57:42IST root         INFO     Epoch 12/500
+2024-10-14T20:57:42IST root         INFO     ----------
+2024-10-14T20:58:05IST root         INFO     Training:   Loss: 22.8410 RMSE: 4.7792
+2024-10-14T20:58:08IST root         INFO     Validation: Loss: 30.2405 RMSE: 5.4991
+2024-10-14T20:58:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:58:08IST root         INFO     Epoch 13/500
+2024-10-14T20:58:08IST root         INFO     ----------
+2024-10-14T20:58:31IST root         INFO     Training:   Loss: 22.2120 RMSE: 4.7130
+2024-10-14T20:58:33IST root         INFO     Validation: Loss: 29.7682 RMSE: 5.4560
+2024-10-14T20:58:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:58:33IST root         INFO     Epoch 14/500
+2024-10-14T20:58:33IST root         INFO     ----------
+2024-10-14T20:58:56IST root         INFO     Training:   Loss: 21.7772 RMSE: 4.6666
+2024-10-14T20:58:59IST root         INFO     Validation: Loss: 28.9046 RMSE: 5.3763
+2024-10-14T20:58:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:58:59IST root         INFO     Epoch 15/500
+2024-10-14T20:58:59IST root         INFO     ----------
+2024-10-14T20:59:22IST root         INFO     Training:   Loss: 21.2956 RMSE: 4.6147
+2024-10-14T20:59:24IST root         INFO     Validation: Loss: 28.8659 RMSE: 5.3727
+2024-10-14T20:59:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:59:24IST root         INFO     Epoch 16/500
+2024-10-14T20:59:24IST root         INFO     ----------
+2024-10-14T20:59:47IST root         INFO     Training:   Loss: 20.5423 RMSE: 4.5324
+2024-10-14T20:59:50IST root         INFO     Validation: Loss: 27.7887 RMSE: 5.2715
+2024-10-14T20:59:50IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T20:59:50IST root         INFO     Epoch 17/500
+2024-10-14T20:59:50IST root         INFO     ----------
+2024-10-14T21:00:13IST root         INFO     Training:   Loss: 20.4214 RMSE: 4.5190
+2024-10-14T21:00:15IST root         INFO     Validation: Loss: 27.0279 RMSE: 5.1988
+2024-10-14T21:00:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:00:15IST root         INFO     Epoch 18/500
+2024-10-14T21:00:15IST root         INFO     ----------
+2024-10-14T21:00:38IST root         INFO     Training:   Loss: 20.0386 RMSE: 4.4764
+2024-10-14T21:00:40IST root         INFO     Validation: Loss: 26.9030 RMSE: 5.1868
+2024-10-14T21:00:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:00:41IST root         INFO     Epoch 19/500
+2024-10-14T21:00:41IST root         INFO     ----------
+2024-10-14T21:01:04IST root         INFO     Training:   Loss: 19.5176 RMSE: 4.4179
+2024-10-14T21:01:07IST root         INFO     Validation: Loss: 27.0237 RMSE: 5.1984
+2024-10-14T21:01:07IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:01:07IST root         INFO     Epoch 20/500
+2024-10-14T21:01:07IST root         INFO     ----------
+2024-10-14T21:01:29IST root         INFO     Training:   Loss: 19.0960 RMSE: 4.3699
+2024-10-14T21:01:32IST root         INFO     Validation: Loss: 25.7487 RMSE: 5.0743
+2024-10-14T21:01:32IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:01:32IST root         INFO     Epoch 21/500
+2024-10-14T21:01:32IST root         INFO     ----------
+2024-10-14T21:01:55IST root         INFO     Training:   Loss: 18.9136 RMSE: 4.3490
+2024-10-14T21:01:57IST root         INFO     Validation: Loss: 25.7612 RMSE: 5.0755
+2024-10-14T21:01:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:01:57IST root         INFO     Epoch 22/500
+2024-10-14T21:01:57IST root         INFO     ----------
+2024-10-14T21:02:21IST root         INFO     Training:   Loss: 18.7575 RMSE: 4.3310
+2024-10-14T21:02:24IST root         INFO     Validation: Loss: 25.5317 RMSE: 5.0529
+2024-10-14T21:02:24IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:02:24IST root         INFO     Epoch 23/500
+2024-10-14T21:02:24IST root         INFO     ----------
+2024-10-14T21:02:47IST root         INFO     Training:   Loss: 18.5267 RMSE: 4.3043
+2024-10-14T21:02:50IST root         INFO     Validation: Loss: 25.1897 RMSE: 5.0189
+2024-10-14T21:02:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:02:50IST root         INFO     Epoch 24/500
+2024-10-14T21:02:50IST root         INFO     ----------
+2024-10-14T21:03:13IST root         INFO     Training:   Loss: 17.9306 RMSE: 4.2345
+2024-10-14T21:03:15IST root         INFO     Validation: Loss: 27.3021 RMSE: 5.2251
+2024-10-14T21:03:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:03:16IST root         INFO     Epoch 25/500
+2024-10-14T21:03:16IST root         INFO     ----------
+2024-10-14T21:03:39IST root         INFO     Training:   Loss: 17.8091 RMSE: 4.2201
+2024-10-14T21:03:41IST root         INFO     Validation: Loss: 24.7012 RMSE: 4.9700
+2024-10-14T21:03:41IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:03:41IST root         INFO     Epoch 26/500
+2024-10-14T21:03:41IST root         INFO     ----------
+2024-10-14T21:04:04IST root         INFO     Training:   Loss: 17.2714 RMSE: 4.1559
+2024-10-14T21:04:06IST root         INFO     Validation: Loss: 25.3925 RMSE: 5.0391
+2024-10-14T21:04:06IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:04:07IST root         INFO     Epoch 27/500
+2024-10-14T21:04:07IST root         INFO     ----------
+2024-10-14T21:04:30IST root         INFO     Training:   Loss: 16.7321 RMSE: 4.0905
+2024-10-14T21:04:32IST root         INFO     Validation: Loss: 24.0185 RMSE: 4.9009
+2024-10-14T21:04:32IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:04:32IST root         INFO     Epoch 28/500
+2024-10-14T21:04:32IST root         INFO     ----------
+2024-10-14T21:04:54IST root         INFO     Training:   Loss: 16.0368 RMSE: 4.0046
+2024-10-14T21:04:56IST root         INFO     Validation: Loss: 22.7420 RMSE: 4.7689
+2024-10-14T21:04:56IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:04:57IST root         INFO     Epoch 29/500
+2024-10-14T21:04:57IST root         INFO     ----------
+2024-10-14T21:05:21IST root         INFO     Training:   Loss: 15.2522 RMSE: 3.9054
+2024-10-14T21:05:24IST root         INFO     Validation: Loss: 23.4054 RMSE: 4.8379
+2024-10-14T21:05:24IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T21:05:24IST root         INFO     Epoch 30/500
+2024-10-14T21:05:24IST root         INFO     ----------
+2024-10-14T21:05:46IST root         INFO     Training:   Loss: 14.7425 RMSE: 3.8396
+2024-10-14T21:05:49IST root         INFO     Validation: Loss: 21.9718 RMSE: 4.6874
+2024-10-14T21:05:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:05:49IST root         INFO     Epoch 31/500
+2024-10-14T21:05:49IST root         INFO     ----------
+2024-10-14T21:06:12IST root         INFO     Training:   Loss: 14.1463 RMSE: 3.7612
+2024-10-14T21:06:15IST root         INFO     Validation: Loss: 21.7548 RMSE: 4.6642
+2024-10-14T21:06:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:06:15IST root         INFO     Epoch 32/500
+2024-10-14T21:06:15IST root         INFO     ----------
+2024-10-14T21:06:38IST root         INFO     Training:   Loss: 13.6282 RMSE: 3.6916
+2024-10-14T21:06:40IST root         INFO     Validation: Loss: 19.5621 RMSE: 4.4229
+2024-10-14T21:06:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:06:40IST root         INFO     Epoch 33/500
+2024-10-14T21:06:40IST root         INFO     ----------
+2024-10-14T21:07:03IST root         INFO     Training:   Loss: 13.1894 RMSE: 3.6317
+2024-10-14T21:07:06IST root         INFO     Validation: Loss: 19.6787 RMSE: 4.4361
+2024-10-14T21:07:06IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:07:06IST root         INFO     Epoch 34/500
+2024-10-14T21:07:06IST root         INFO     ----------
+2024-10-14T21:07:28IST root         INFO     Training:   Loss: 12.4070 RMSE: 3.5224
+2024-10-14T21:07:31IST root         INFO     Validation: Loss: 17.9245 RMSE: 4.2337
+2024-10-14T21:07:31IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:07:31IST root         INFO     Epoch 35/500
+2024-10-14T21:07:31IST root         INFO     ----------
+2024-10-14T21:07:54IST root         INFO     Training:   Loss: 11.9225 RMSE: 3.4529
+2024-10-14T21:07:57IST root         INFO     Validation: Loss: 16.6467 RMSE: 4.0800
+2024-10-14T21:07:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:07:57IST root         INFO     Epoch 36/500
+2024-10-14T21:07:57IST root         INFO     ----------
+2024-10-14T21:08:19IST root         INFO     Training:   Loss: 11.4624 RMSE: 3.3856
+2024-10-14T21:08:22IST root         INFO     Validation: Loss: 18.2316 RMSE: 4.2699
+2024-10-14T21:08:22IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:08:22IST root         INFO     Epoch 37/500
+2024-10-14T21:08:22IST root         INFO     ----------
+2024-10-14T21:08:45IST root         INFO     Training:   Loss: 10.9185 RMSE: 3.3043
+2024-10-14T21:08:48IST root         INFO     Validation: Loss: 15.5449 RMSE: 3.9427
+2024-10-14T21:08:48IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:08:48IST root         INFO     Epoch 38/500
+2024-10-14T21:08:48IST root         INFO     ----------
+2024-10-14T21:09:10IST root         INFO     Training:   Loss: 10.0800 RMSE: 3.1749
+2024-10-14T21:09:12IST root         INFO     Validation: Loss: 15.4170 RMSE: 3.9264
+2024-10-14T21:09:12IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:09:12IST root         INFO     Epoch 39/500
+2024-10-14T21:09:12IST root         INFO     ----------
+2024-10-14T21:09:35IST root         INFO     Training:   Loss: 10.1074 RMSE: 3.1792
+2024-10-14T21:09:38IST root         INFO     Validation: Loss: 14.6042 RMSE: 3.8215
+2024-10-14T21:09:38IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:09:38IST root         INFO     Epoch 40/500
+2024-10-14T21:09:38IST root         INFO     ----------
+2024-10-14T21:10:01IST root         INFO     Training:   Loss: 9.6398 RMSE: 3.1048
+2024-10-14T21:10:03IST root         INFO     Validation: Loss: 15.3265 RMSE: 3.9149
+2024-10-14T21:10:03IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:10:03IST root         INFO     Epoch 41/500
+2024-10-14T21:10:03IST root         INFO     ----------
+2024-10-14T21:10:26IST root         INFO     Training:   Loss: 9.3434 RMSE: 3.0567
+2024-10-14T21:10:28IST root         INFO     Validation: Loss: 14.2347 RMSE: 3.7729
+2024-10-14T21:10:28IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:10:28IST root         INFO     Epoch 42/500
+2024-10-14T21:10:28IST root         INFO     ----------
+2024-10-14T21:10:51IST root         INFO     Training:   Loss: 9.2287 RMSE: 3.0379
+2024-10-14T21:10:53IST root         INFO     Validation: Loss: 15.2557 RMSE: 3.9058
+2024-10-14T21:10:53IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:10:54IST root         INFO     Epoch 43/500
+2024-10-14T21:10:54IST root         INFO     ----------
+2024-10-14T21:11:17IST root         INFO     Training:   Loss: 8.8871 RMSE: 2.9811
+2024-10-14T21:11:19IST root         INFO     Validation: Loss: 14.4377 RMSE: 3.7997
+2024-10-14T21:11:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:11:19IST root         INFO     Epoch 44/500
+2024-10-14T21:11:19IST root         INFO     ----------
+2024-10-14T21:11:42IST root         INFO     Training:   Loss: 8.5908 RMSE: 2.9310
+2024-10-14T21:11:44IST root         INFO     Validation: Loss: 12.2491 RMSE: 3.4999
+2024-10-14T21:11:44IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:11:45IST root         INFO     Epoch 45/500
+2024-10-14T21:11:45IST root         INFO     ----------
+2024-10-14T21:12:08IST root         INFO     Training:   Loss: 8.3256 RMSE: 2.8854
+2024-10-14T21:12:10IST root         INFO     Validation: Loss: 12.3512 RMSE: 3.5144
+2024-10-14T21:12:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:12:10IST root         INFO     Epoch 46/500
+2024-10-14T21:12:10IST root         INFO     ----------
+2024-10-14T21:12:32IST root         INFO     Training:   Loss: 8.1297 RMSE: 2.8513
+2024-10-14T21:12:35IST root         INFO     Validation: Loss: 12.5290 RMSE: 3.5396
+2024-10-14T21:12:35IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:12:35IST root         INFO     Epoch 47/500
+2024-10-14T21:12:35IST root         INFO     ----------
+2024-10-14T21:12:58IST root         INFO     Training:   Loss: 7.8500 RMSE: 2.8018
+2024-10-14T21:13:00IST root         INFO     Validation: Loss: 11.1193 RMSE: 3.3346
+2024-10-14T21:13:00IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:13:00IST root         INFO     Epoch 48/500
+2024-10-14T21:13:00IST root         INFO     ----------
+2024-10-14T21:13:23IST root         INFO     Training:   Loss: 7.4138 RMSE: 2.7228
+2024-10-14T21:13:26IST root         INFO     Validation: Loss: 11.7710 RMSE: 3.4309
+2024-10-14T21:13:26IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:13:26IST root         INFO     Epoch 49/500
+2024-10-14T21:13:26IST root         INFO     ----------
+2024-10-14T21:13:50IST root         INFO     Training:   Loss: 7.5009 RMSE: 2.7388
+2024-10-14T21:13:52IST root         INFO     Validation: Loss: 12.6717 RMSE: 3.5597
+2024-10-14T21:13:52IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:13:52IST root         INFO     Epoch 50/500
+2024-10-14T21:13:52IST root         INFO     ----------
+2024-10-14T21:14:15IST root         INFO     Training:   Loss: 7.2551 RMSE: 2.6935
+2024-10-14T21:14:18IST root         INFO     Validation: Loss: 10.5780 RMSE: 3.2524
+2024-10-14T21:14:18IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:14:18IST root         INFO     Epoch 51/500
+2024-10-14T21:14:18IST root         INFO     ----------
+2024-10-14T21:14:41IST root         INFO     Training:   Loss: 7.0951 RMSE: 2.6637
+2024-10-14T21:14:44IST root         INFO     Validation: Loss: 11.6442 RMSE: 3.4124
+2024-10-14T21:14:44IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:14:44IST root         INFO     Epoch 52/500
+2024-10-14T21:14:44IST root         INFO     ----------
+2024-10-14T21:15:07IST root         INFO     Training:   Loss: 6.8311 RMSE: 2.6136
+2024-10-14T21:15:10IST root         INFO     Validation: Loss: 10.5047 RMSE: 3.2411
+2024-10-14T21:15:10IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:15:10IST root         INFO     Epoch 53/500
+2024-10-14T21:15:10IST root         INFO     ----------
+2024-10-14T21:15:34IST root         INFO     Training:   Loss: 6.7053 RMSE: 2.5895
+2024-10-14T21:15:36IST root         INFO     Validation: Loss: 11.4799 RMSE: 3.3882
+2024-10-14T21:15:36IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:15:36IST root         INFO     Epoch 54/500
+2024-10-14T21:15:36IST root         INFO     ----------
+2024-10-14T21:15:59IST root         INFO     Training:   Loss: 6.4482 RMSE: 2.5393
+2024-10-14T21:16:01IST root         INFO     Validation: Loss: 11.3840 RMSE: 3.3740
+2024-10-14T21:16:01IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:16:01IST root         INFO     Epoch 55/500
+2024-10-14T21:16:01IST root         INFO     ----------
+2024-10-14T21:16:24IST root         INFO     Training:   Loss: 6.6158 RMSE: 2.5721
+2024-10-14T21:16:27IST root         INFO     Validation: Loss: 10.7399 RMSE: 3.2772
+2024-10-14T21:16:27IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:16:27IST root         INFO     Epoch 56/500
+2024-10-14T21:16:27IST root         INFO     ----------
+2024-10-14T21:16:49IST root         INFO     Training:   Loss: 6.4905 RMSE: 2.5476
+2024-10-14T21:16:52IST root         INFO     Validation: Loss: 11.3728 RMSE: 3.3724
+2024-10-14T21:16:52IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:16:52IST root         INFO     Epoch 57/500
+2024-10-14T21:16:52IST root         INFO     ----------
+2024-10-14T21:17:15IST root         INFO     Training:   Loss: 6.2915 RMSE: 2.5083
+2024-10-14T21:17:18IST root         INFO     Validation: Loss: 12.8362 RMSE: 3.5828
+2024-10-14T21:17:18IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:17:18IST root         INFO     Epoch 58/500
+2024-10-14T21:17:18IST root         INFO     ----------
+2024-10-14T21:17:40IST root         INFO     Training:   Loss: 6.4168 RMSE: 2.5331
+2024-10-14T21:17:43IST root         INFO     Validation: Loss: 11.1151 RMSE: 3.3339
+2024-10-14T21:17:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:17:43IST root         INFO     Epoch 59/500
+2024-10-14T21:17:43IST root         INFO     ----------
+2024-10-14T21:18:06IST root         INFO     Training:   Loss: 6.1018 RMSE: 2.4702
+2024-10-14T21:18:08IST root         INFO     Validation: Loss: 9.6438 RMSE: 3.1054
+2024-10-14T21:18:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:18:08IST root         INFO     Epoch 60/500
+2024-10-14T21:18:08IST root         INFO     ----------
+2024-10-14T21:18:31IST root         INFO     Training:   Loss: 6.1598 RMSE: 2.4819
+2024-10-14T21:18:34IST root         INFO     Validation: Loss: 12.8675 RMSE: 3.5871
+2024-10-14T21:18:34IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:18:34IST root         INFO     Epoch 61/500
+2024-10-14T21:18:34IST root         INFO     ----------
+2024-10-14T21:18:57IST root         INFO     Training:   Loss: 6.1846 RMSE: 2.4869
+2024-10-14T21:18:59IST root         INFO     Validation: Loss: 9.7895 RMSE: 3.1288
+2024-10-14T21:18:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:18:59IST root         INFO     Epoch 62/500
+2024-10-14T21:18:59IST root         INFO     ----------
+2024-10-14T21:19:22IST root         INFO     Training:   Loss: 6.2012 RMSE: 2.4902
+2024-10-14T21:19:24IST root         INFO     Validation: Loss: 9.9820 RMSE: 3.1594
+2024-10-14T21:19:24IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:19:24IST root         INFO     Epoch 63/500
+2024-10-14T21:19:24IST root         INFO     ----------
+2024-10-14T21:19:47IST root         INFO     Training:   Loss: 6.0198 RMSE: 2.4535
+2024-10-14T21:19:50IST root         INFO     Validation: Loss: 10.0483 RMSE: 3.1699
+2024-10-14T21:19:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:19:50IST root         INFO     Epoch 64/500
+2024-10-14T21:19:50IST root         INFO     ----------
+2024-10-14T21:20:12IST root         INFO     Training:   Loss: 6.0980 RMSE: 2.4694
+2024-10-14T21:20:15IST root         INFO     Validation: Loss: 10.0706 RMSE: 3.1734
+2024-10-14T21:20:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:20:15IST root         INFO     Epoch 65/500
+2024-10-14T21:20:15IST root         INFO     ----------
+2024-10-14T21:20:38IST root         INFO     Training:   Loss: 5.7752 RMSE: 2.4032
+2024-10-14T21:20:40IST root         INFO     Validation: Loss: 10.9542 RMSE: 3.3097
+2024-10-14T21:20:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:20:40IST root         INFO     Epoch 66/500
+2024-10-14T21:20:40IST root         INFO     ----------
+2024-10-14T21:21:02IST root         INFO     Training:   Loss: 5.9605 RMSE: 2.4414
+2024-10-14T21:21:05IST root         INFO     Validation: Loss: 10.6476 RMSE: 3.2631
+2024-10-14T21:21:05IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:21:05IST root         INFO     Epoch 67/500
+2024-10-14T21:21:05IST root         INFO     ----------
+2024-10-14T21:21:28IST root         INFO     Training:   Loss: 5.7966 RMSE: 2.4076
+2024-10-14T21:21:30IST root         INFO     Validation: Loss: 10.5345 RMSE: 3.2457
+2024-10-14T21:21:30IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:21:30IST root         INFO     Epoch 68/500
+2024-10-14T21:21:30IST root         INFO     ----------
+2024-10-14T21:21:53IST root         INFO     Training:   Loss: 5.6298 RMSE: 2.3727
+2024-10-14T21:21:56IST root         INFO     Validation: Loss: 9.5957 RMSE: 3.0977
+2024-10-14T21:21:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:21:56IST root         INFO     Epoch 69/500
+2024-10-14T21:21:56IST root         INFO     ----------
+2024-10-14T21:22:20IST root         INFO     Training:   Loss: 5.6260 RMSE: 2.3719
+2024-10-14T21:22:22IST root         INFO     Validation: Loss: 10.3687 RMSE: 3.2200
+2024-10-14T21:22:22IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:22:22IST root         INFO     Epoch 70/500
+2024-10-14T21:22:22IST root         INFO     ----------
+2024-10-14T21:22:45IST root         INFO     Training:   Loss: 5.6304 RMSE: 2.3728
+2024-10-14T21:22:47IST root         INFO     Validation: Loss: 12.3282 RMSE: 3.5112
+2024-10-14T21:22:47IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:22:48IST root         INFO     Epoch 71/500
+2024-10-14T21:22:48IST root         INFO     ----------
+2024-10-14T21:23:11IST root         INFO     Training:   Loss: 5.5200 RMSE: 2.3495
+2024-10-14T21:23:13IST root         INFO     Validation: Loss: 10.5500 RMSE: 3.2481
+2024-10-14T21:23:13IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:23:13IST root         INFO     Epoch 72/500
+2024-10-14T21:23:13IST root         INFO     ----------
+2024-10-14T21:23:36IST root         INFO     Training:   Loss: 5.6123 RMSE: 2.3690
+2024-10-14T21:23:39IST root         INFO     Validation: Loss: 12.4017 RMSE: 3.5216
+2024-10-14T21:23:39IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:23:39IST root         INFO     Epoch 73/500
+2024-10-14T21:23:39IST root         INFO     ----------
+2024-10-14T21:24:03IST root         INFO     Training:   Loss: 5.4292 RMSE: 2.3301
+2024-10-14T21:24:05IST root         INFO     Validation: Loss: 10.7237 RMSE: 3.2747
+2024-10-14T21:24:05IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:24:05IST root         INFO     Epoch 74/500
+2024-10-14T21:24:05IST root         INFO     ----------
+2024-10-14T21:24:28IST root         INFO     Training:   Loss: 5.4553 RMSE: 2.3357
+2024-10-14T21:24:31IST root         INFO     Validation: Loss: 11.6418 RMSE: 3.4120
+2024-10-14T21:24:31IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:24:31IST root         INFO     Epoch 75/500
+2024-10-14T21:24:31IST root         INFO     ----------
+2024-10-14T21:24:54IST root         INFO     Training:   Loss: 5.4149 RMSE: 2.3270
+2024-10-14T21:24:57IST root         INFO     Validation: Loss: 11.3575 RMSE: 3.3701
+2024-10-14T21:24:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:24:57IST root         INFO     Epoch 76/500
+2024-10-14T21:24:57IST root         INFO     ----------
+2024-10-14T21:25:22IST root         INFO     Training:   Loss: 5.3197 RMSE: 2.3065
+2024-10-14T21:25:25IST root         INFO     Validation: Loss: 10.9505 RMSE: 3.3091
+2024-10-14T21:25:25IST root         INFO     Epoch complete in 0m 28s
+2024-10-14T21:25:25IST root         INFO     Epoch 77/500
+2024-10-14T21:25:25IST root         INFO     ----------
+2024-10-14T21:25:49IST root         INFO     Training:   Loss: 5.2218 RMSE: 2.2851
+2024-10-14T21:25:51IST root         INFO     Validation: Loss: 9.4928 RMSE: 3.0810
+2024-10-14T21:25:51IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:25:51IST root         INFO     Epoch 78/500
+2024-10-14T21:25:51IST root         INFO     ----------
+2024-10-14T21:26:14IST root         INFO     Training:   Loss: 5.3078 RMSE: 2.3039
+2024-10-14T21:26:16IST root         INFO     Validation: Loss: 9.0720 RMSE: 3.0120
+2024-10-14T21:26:16IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:26:17IST root         INFO     Epoch 79/500
+2024-10-14T21:26:17IST root         INFO     ----------
+2024-10-14T21:26:40IST root         INFO     Training:   Loss: 5.3044 RMSE: 2.3031
+2024-10-14T21:26:42IST root         INFO     Validation: Loss: 9.4082 RMSE: 3.0673
+2024-10-14T21:26:42IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:26:42IST root         INFO     Epoch 80/500
+2024-10-14T21:26:42IST root         INFO     ----------
+2024-10-14T21:27:04IST root         INFO     Training:   Loss: 5.2916 RMSE: 2.3004
+2024-10-14T21:27:07IST root         INFO     Validation: Loss: 9.6927 RMSE: 3.1133
+2024-10-14T21:27:07IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:27:07IST root         INFO     Epoch 81/500
+2024-10-14T21:27:07IST root         INFO     ----------
+2024-10-14T21:27:30IST root         INFO     Training:   Loss: 4.9177 RMSE: 2.2176
+2024-10-14T21:27:32IST root         INFO     Validation: Loss: 10.1516 RMSE: 3.1862
+2024-10-14T21:27:32IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:27:32IST root         INFO     Epoch 82/500
+2024-10-14T21:27:32IST root         INFO     ----------
+2024-10-14T21:27:55IST root         INFO     Training:   Loss: 5.2331 RMSE: 2.2876
+2024-10-14T21:27:57IST root         INFO     Validation: Loss: 10.7003 RMSE: 3.2711
+2024-10-14T21:27:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:27:58IST root         INFO     Epoch 83/500
+2024-10-14T21:27:58IST root         INFO     ----------
+2024-10-14T21:28:21IST root         INFO     Training:   Loss: 5.1539 RMSE: 2.2702
+2024-10-14T21:28:24IST root         INFO     Validation: Loss: 12.9717 RMSE: 3.6016
+2024-10-14T21:28:24IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:28:24IST root         INFO     Epoch 84/500
+2024-10-14T21:28:24IST root         INFO     ----------
+2024-10-14T21:28:47IST root         INFO     Training:   Loss: 4.9349 RMSE: 2.2215
+2024-10-14T21:28:49IST root         INFO     Validation: Loss: 9.7890 RMSE: 3.1287
+2024-10-14T21:28:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:28:49IST root         INFO     Epoch 85/500
+2024-10-14T21:28:49IST root         INFO     ----------
+2024-10-14T21:29:12IST root         INFO     Training:   Loss: 4.8140 RMSE: 2.1941
+2024-10-14T21:29:15IST root         INFO     Validation: Loss: 12.2654 RMSE: 3.5022
+2024-10-14T21:29:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:29:15IST root         INFO     Epoch 86/500
+2024-10-14T21:29:15IST root         INFO     ----------
+2024-10-14T21:29:37IST root         INFO     Training:   Loss: 5.1569 RMSE: 2.2709
+2024-10-14T21:29:39IST root         INFO     Validation: Loss: 11.4338 RMSE: 3.3814
+2024-10-14T21:29:39IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:29:40IST root         INFO     Epoch 87/500
+2024-10-14T21:29:40IST root         INFO     ----------
+2024-10-14T21:30:02IST root         INFO     Training:   Loss: 4.8520 RMSE: 2.2027
+2024-10-14T21:30:04IST root         INFO     Validation: Loss: 9.6887 RMSE: 3.1127
+2024-10-14T21:30:04IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:30:04IST root         INFO     Epoch 88/500
+2024-10-14T21:30:04IST root         INFO     ----------
+2024-10-14T21:30:27IST root         INFO     Training:   Loss: 4.9754 RMSE: 2.2306
+2024-10-14T21:30:30IST root         INFO     Validation: Loss: 9.1028 RMSE: 3.0171
+2024-10-14T21:30:30IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:30:30IST root         INFO     Epoch 89/500
+2024-10-14T21:30:30IST root         INFO     ----------
+2024-10-14T21:30:53IST root         INFO     Training:   Loss: 4.9952 RMSE: 2.2350
+2024-10-14T21:30:56IST root         INFO     Validation: Loss: 9.3411 RMSE: 3.0563
+2024-10-14T21:30:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:30:56IST root         INFO     Epoch 90/500
+2024-10-14T21:30:56IST root         INFO     ----------
+2024-10-14T21:31:19IST root         INFO     Training:   Loss: 5.0457 RMSE: 2.2463
+2024-10-14T21:31:21IST root         INFO     Validation: Loss: 12.0934 RMSE: 3.4776
+2024-10-14T21:31:21IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:31:22IST root         INFO     Epoch 91/500
+2024-10-14T21:31:22IST root         INFO     ----------
+2024-10-14T21:31:44IST root         INFO     Training:   Loss: 4.9681 RMSE: 2.2289
+2024-10-14T21:31:47IST root         INFO     Validation: Loss: 10.0013 RMSE: 3.1625
+2024-10-14T21:31:47IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:31:47IST root         INFO     Epoch 92/500
+2024-10-14T21:31:47IST root         INFO     ----------
+2024-10-14T21:32:10IST root         INFO     Training:   Loss: 4.8712 RMSE: 2.2071
+2024-10-14T21:32:12IST root         INFO     Validation: Loss: 9.7156 RMSE: 3.1170
+2024-10-14T21:32:12IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:32:12IST root         INFO     Epoch 93/500
+2024-10-14T21:32:12IST root         INFO     ----------
+2024-10-14T21:32:35IST root         INFO     Training:   Loss: 4.7308 RMSE: 2.1750
+2024-10-14T21:32:37IST root         INFO     Validation: Loss: 9.0097 RMSE: 3.0016
+2024-10-14T21:32:37IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:32:37IST root         INFO     Epoch 94/500
+2024-10-14T21:32:37IST root         INFO     ----------
+2024-10-14T21:33:00IST root         INFO     Training:   Loss: 4.8586 RMSE: 2.2042
+2024-10-14T21:33:02IST root         INFO     Validation: Loss: 8.9277 RMSE: 2.9879
+2024-10-14T21:33:02IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:33:03IST root         INFO     Epoch 95/500
+2024-10-14T21:33:03IST root         INFO     ----------
+2024-10-14T21:33:26IST root         INFO     Training:   Loss: 4.7417 RMSE: 2.1775
+2024-10-14T21:33:29IST root         INFO     Validation: Loss: 8.8925 RMSE: 2.9820
+2024-10-14T21:33:29IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:33:29IST root         INFO     Epoch 96/500
+2024-10-14T21:33:29IST root         INFO     ----------
+2024-10-14T21:33:51IST root         INFO     Training:   Loss: 4.7758 RMSE: 2.1854
+2024-10-14T21:33:53IST root         INFO     Validation: Loss: 9.1057 RMSE: 3.0176
+2024-10-14T21:33:53IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:33:54IST root         INFO     Epoch 97/500
+2024-10-14T21:33:54IST root         INFO     ----------
+2024-10-14T21:34:16IST root         INFO     Training:   Loss: 4.5879 RMSE: 2.1419
+2024-10-14T21:34:19IST root         INFO     Validation: Loss: 9.8919 RMSE: 3.1451
+2024-10-14T21:34:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:34:19IST root         INFO     Epoch 98/500
+2024-10-14T21:34:19IST root         INFO     ----------
+2024-10-14T21:34:41IST root         INFO     Training:   Loss: 4.6080 RMSE: 2.1466
+2024-10-14T21:34:44IST root         INFO     Validation: Loss: 10.4215 RMSE: 3.2282
+2024-10-14T21:34:44IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:34:44IST root         INFO     Epoch 99/500
+2024-10-14T21:34:44IST root         INFO     ----------
+2024-10-14T21:35:08IST root         INFO     Training:   Loss: 4.5466 RMSE: 2.1323
+2024-10-14T21:35:10IST root         INFO     Validation: Loss: 10.7189 RMSE: 3.2740
+2024-10-14T21:35:10IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:35:10IST root         INFO     Epoch 100/500
+2024-10-14T21:35:10IST root         INFO     ----------
+2024-10-14T21:35:33IST root         INFO     Training:   Loss: 4.6154 RMSE: 2.1483
+2024-10-14T21:35:35IST root         INFO     Validation: Loss: 9.0327 RMSE: 3.0054
+2024-10-14T21:35:35IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:35:36IST root         INFO     Epoch 101/500
+2024-10-14T21:35:36IST root         INFO     ----------
+2024-10-14T21:35:58IST root         INFO     Training:   Loss: 4.6988 RMSE: 2.1677
+2024-10-14T21:36:01IST root         INFO     Validation: Loss: 9.2620 RMSE: 3.0434
+2024-10-14T21:36:01IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:36:01IST root         INFO     Epoch 102/500
+2024-10-14T21:36:01IST root         INFO     ----------
+2024-10-14T21:36:23IST root         INFO     Training:   Loss: 4.6404 RMSE: 2.1541
+2024-10-14T21:36:25IST root         INFO     Validation: Loss: 9.4526 RMSE: 3.0745
+2024-10-14T21:36:25IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:36:26IST root         INFO     Epoch 103/500
+2024-10-14T21:36:26IST root         INFO     ----------
+2024-10-14T21:36:48IST root         INFO     Training:   Loss: 4.8014 RMSE: 2.1912
+2024-10-14T21:36:50IST root         INFO     Validation: Loss: 9.2886 RMSE: 3.0477
+2024-10-14T21:36:50IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:36:50IST root         INFO     Epoch 104/500
+2024-10-14T21:36:50IST root         INFO     ----------
+2024-10-14T21:37:13IST root         INFO     Training:   Loss: 4.6192 RMSE: 2.1492
+2024-10-14T21:37:15IST root         INFO     Validation: Loss: 12.0385 RMSE: 3.4697
+2024-10-14T21:37:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:37:15IST root         INFO     Epoch 105/500
+2024-10-14T21:37:15IST root         INFO     ----------
+2024-10-14T21:37:38IST root         INFO     Training:   Loss: 4.6177 RMSE: 2.1489
+2024-10-14T21:37:40IST root         INFO     Validation: Loss: 10.5795 RMSE: 3.2526
+2024-10-14T21:37:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:37:40IST root         INFO     Epoch 106/500
+2024-10-14T21:37:40IST root         INFO     ----------
+2024-10-14T21:38:02IST root         INFO     Training:   Loss: 4.5063 RMSE: 2.1228
+2024-10-14T21:38:05IST root         INFO     Validation: Loss: 9.0925 RMSE: 3.0154
+2024-10-14T21:38:05IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:38:05IST root         INFO     Epoch 107/500
+2024-10-14T21:38:05IST root         INFO     ----------
+2024-10-14T21:38:28IST root         INFO     Training:   Loss: 4.6243 RMSE: 2.1504
+2024-10-14T21:38:30IST root         INFO     Validation: Loss: 9.3907 RMSE: 3.0644
+2024-10-14T21:38:30IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:38:30IST root         INFO     Epoch 108/500
+2024-10-14T21:38:30IST root         INFO     ----------
+2024-10-14T21:38:53IST root         INFO     Training:   Loss: 4.3508 RMSE: 2.0859
+2024-10-14T21:38:55IST root         INFO     Validation: Loss: 8.9572 RMSE: 2.9929
+2024-10-14T21:38:55IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:38:55IST root         INFO     Epoch 109/500
+2024-10-14T21:38:55IST root         INFO     ----------
+2024-10-14T21:39:18IST root         INFO     Training:   Loss: 4.4956 RMSE: 2.1203
+2024-10-14T21:39:21IST root         INFO     Validation: Loss: 9.7705 RMSE: 3.1258
+2024-10-14T21:39:21IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:39:21IST root         INFO     Epoch 110/500
+2024-10-14T21:39:21IST root         INFO     ----------
+2024-10-14T21:39:43IST root         INFO     Training:   Loss: 4.4389 RMSE: 2.1069
+2024-10-14T21:39:45IST root         INFO     Validation: Loss: 10.8392 RMSE: 3.2923
+2024-10-14T21:39:45IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:39:46IST root         INFO     Epoch 111/500
+2024-10-14T21:39:46IST root         INFO     ----------
+2024-10-14T21:40:08IST root         INFO     Training:   Loss: 4.3719 RMSE: 2.0909
+2024-10-14T21:40:11IST root         INFO     Validation: Loss: 8.9407 RMSE: 2.9901
+2024-10-14T21:40:11IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:40:11IST root         INFO     Epoch 112/500
+2024-10-14T21:40:11IST root         INFO     ----------
+2024-10-14T21:40:34IST root         INFO     Training:   Loss: 4.5168 RMSE: 2.1253
+2024-10-14T21:40:36IST root         INFO     Validation: Loss: 9.7113 RMSE: 3.1163
+2024-10-14T21:40:36IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:40:36IST root         INFO     Epoch 113/500
+2024-10-14T21:40:36IST root         INFO     ----------
+2024-10-14T21:40:59IST root         INFO     Training:   Loss: 4.3643 RMSE: 2.0891
+2024-10-14T21:41:01IST root         INFO     Validation: Loss: 9.2705 RMSE: 3.0448
+2024-10-14T21:41:01IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:41:01IST root         INFO     Epoch 114/500
+2024-10-14T21:41:01IST root         INFO     ----------
+2024-10-14T21:41:23IST root         INFO     Training:   Loss: 4.3569 RMSE: 2.0873
+2024-10-14T21:41:26IST root         INFO     Validation: Loss: 9.0688 RMSE: 3.0114
+2024-10-14T21:41:26IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:41:26IST root         INFO     Epoch 115/500
+2024-10-14T21:41:26IST root         INFO     ----------
+2024-10-14T21:41:48IST root         INFO     Training:   Loss: 4.4611 RMSE: 2.1121
+2024-10-14T21:41:51IST root         INFO     Validation: Loss: 9.2341 RMSE: 3.0388
+2024-10-14T21:41:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:41:51IST root         INFO     Epoch 116/500
+2024-10-14T21:41:51IST root         INFO     ----------
+2024-10-14T21:42:14IST root         INFO     Training:   Loss: 4.4034 RMSE: 2.0984
+2024-10-14T21:42:16IST root         INFO     Validation: Loss: 8.5366 RMSE: 2.9218
+2024-10-14T21:42:16IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:42:16IST root         INFO     Epoch 117/500
+2024-10-14T21:42:16IST root         INFO     ----------
+2024-10-14T21:42:38IST root         INFO     Training:   Loss: 4.2252 RMSE: 2.0555
+2024-10-14T21:42:41IST root         INFO     Validation: Loss: 8.7843 RMSE: 2.9638
+2024-10-14T21:42:41IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:42:41IST root         INFO     Epoch 118/500
+2024-10-14T21:42:41IST root         INFO     ----------
+2024-10-14T21:43:04IST root         INFO     Training:   Loss: 4.3368 RMSE: 2.0825
+2024-10-14T21:43:06IST root         INFO     Validation: Loss: 8.3670 RMSE: 2.8926
+2024-10-14T21:43:06IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:43:06IST root         INFO     Epoch 119/500
+2024-10-14T21:43:06IST root         INFO     ----------
+2024-10-14T21:43:29IST root         INFO     Training:   Loss: 4.2801 RMSE: 2.0688
+2024-10-14T21:43:31IST root         INFO     Validation: Loss: 8.8847 RMSE: 2.9807
+2024-10-14T21:43:31IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:43:31IST root         INFO     Epoch 120/500
+2024-10-14T21:43:31IST root         INFO     ----------
+2024-10-14T21:43:54IST root         INFO     Training:   Loss: 4.3650 RMSE: 2.0893
+2024-10-14T21:43:57IST root         INFO     Validation: Loss: 8.4204 RMSE: 2.9018
+2024-10-14T21:43:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:43:57IST root         INFO     Epoch 121/500
+2024-10-14T21:43:57IST root         INFO     ----------
+2024-10-14T21:44:20IST root         INFO     Training:   Loss: 4.3487 RMSE: 2.0854
+2024-10-14T21:44:23IST root         INFO     Validation: Loss: 8.8869 RMSE: 2.9811
+2024-10-14T21:44:23IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:44:23IST root         INFO     Epoch 122/500
+2024-10-14T21:44:23IST root         INFO     ----------
+2024-10-14T21:44:45IST root         INFO     Training:   Loss: 4.2885 RMSE: 2.0709
+2024-10-14T21:44:48IST root         INFO     Validation: Loss: 8.7094 RMSE: 2.9512
+2024-10-14T21:44:48IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:44:48IST root         INFO     Epoch 123/500
+2024-10-14T21:44:48IST root         INFO     ----------
+2024-10-14T21:45:11IST root         INFO     Training:   Loss: 4.2016 RMSE: 2.0498
+2024-10-14T21:45:13IST root         INFO     Validation: Loss: 9.3097 RMSE: 3.0512
+2024-10-14T21:45:13IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:45:13IST root         INFO     Epoch 124/500
+2024-10-14T21:45:13IST root         INFO     ----------
+2024-10-14T21:45:35IST root         INFO     Training:   Loss: 4.2285 RMSE: 2.0563
+2024-10-14T21:45:38IST root         INFO     Validation: Loss: 10.1326 RMSE: 3.1832
+2024-10-14T21:45:38IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:45:38IST root         INFO     Epoch 125/500
+2024-10-14T21:45:38IST root         INFO     ----------
+2024-10-14T21:46:01IST root         INFO     Training:   Loss: 4.1172 RMSE: 2.0291
+2024-10-14T21:46:03IST root         INFO     Validation: Loss: 8.6562 RMSE: 2.9421
+2024-10-14T21:46:03IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:46:03IST root         INFO     Epoch 126/500
+2024-10-14T21:46:03IST root         INFO     ----------
+2024-10-14T21:46:25IST root         INFO     Training:   Loss: 4.2700 RMSE: 2.0664
+2024-10-14T21:46:28IST root         INFO     Validation: Loss: 8.9822 RMSE: 2.9970
+2024-10-14T21:46:28IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:46:28IST root         INFO     Epoch 127/500
+2024-10-14T21:46:28IST root         INFO     ----------
+2024-10-14T21:46:51IST root         INFO     Training:   Loss: 4.1614 RMSE: 2.0400
+2024-10-14T21:46:53IST root         INFO     Validation: Loss: 9.2462 RMSE: 3.0408
+2024-10-14T21:46:53IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:46:53IST root         INFO     Epoch 128/500
+2024-10-14T21:46:53IST root         INFO     ----------
+2024-10-14T21:47:16IST root         INFO     Training:   Loss: 4.3076 RMSE: 2.0755
+2024-10-14T21:47:18IST root         INFO     Validation: Loss: 10.1464 RMSE: 3.1853
+2024-10-14T21:47:18IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:47:18IST root         INFO     Epoch 129/500
+2024-10-14T21:47:18IST root         INFO     ----------
+2024-10-14T21:47:41IST root         INFO     Training:   Loss: 4.3494 RMSE: 2.0855
+2024-10-14T21:47:43IST root         INFO     Validation: Loss: 9.0847 RMSE: 3.0141
+2024-10-14T21:47:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:47:43IST root         INFO     Epoch 130/500
+2024-10-14T21:47:43IST root         INFO     ----------
+2024-10-14T21:48:06IST root         INFO     Training:   Loss: 4.1556 RMSE: 2.0385
+2024-10-14T21:48:08IST root         INFO     Validation: Loss: 9.3101 RMSE: 3.0512
+2024-10-14T21:48:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:48:09IST root         INFO     Epoch 131/500
+2024-10-14T21:48:09IST root         INFO     ----------
+2024-10-14T21:48:32IST root         INFO     Training:   Loss: 4.1646 RMSE: 2.0407
+2024-10-14T21:48:34IST root         INFO     Validation: Loss: 9.4063 RMSE: 3.0670
+2024-10-14T21:48:34IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:48:34IST root         INFO     Epoch 132/500
+2024-10-14T21:48:34IST root         INFO     ----------
+2024-10-14T21:48:57IST root         INFO     Training:   Loss: 4.1883 RMSE: 2.0465
+2024-10-14T21:48:59IST root         INFO     Validation: Loss: 8.6046 RMSE: 2.9334
+2024-10-14T21:48:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:49:00IST root         INFO     Epoch 133/500
+2024-10-14T21:49:00IST root         INFO     ----------
+2024-10-14T21:49:22IST root         INFO     Training:   Loss: 4.3381 RMSE: 2.0828
+2024-10-14T21:49:24IST root         INFO     Validation: Loss: 8.9280 RMSE: 2.9880
+2024-10-14T21:49:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:49:24IST root         INFO     Epoch 134/500
+2024-10-14T21:49:24IST root         INFO     ----------
+2024-10-14T21:49:48IST root         INFO     Training:   Loss: 4.2387 RMSE: 2.0588
+2024-10-14T21:49:50IST root         INFO     Validation: Loss: 8.7444 RMSE: 2.9571
+2024-10-14T21:49:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:49:50IST root         INFO     Epoch 135/500
+2024-10-14T21:49:50IST root         INFO     ----------
+2024-10-14T21:50:13IST root         INFO     Training:   Loss: 4.2838 RMSE: 2.0697
+2024-10-14T21:50:15IST root         INFO     Validation: Loss: 9.9010 RMSE: 3.1466
+2024-10-14T21:50:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:50:15IST root         INFO     Epoch 136/500
+2024-10-14T21:50:15IST root         INFO     ----------
+2024-10-14T21:50:38IST root         INFO     Training:   Loss: 4.0788 RMSE: 2.0196
+2024-10-14T21:50:41IST root         INFO     Validation: Loss: 10.2929 RMSE: 3.2083
+2024-10-14T21:50:41IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:50:41IST root         INFO     Epoch 137/500
+2024-10-14T21:50:41IST root         INFO     ----------
+2024-10-14T21:51:03IST root         INFO     Training:   Loss: 3.9141 RMSE: 1.9784
+2024-10-14T21:51:05IST root         INFO     Validation: Loss: 8.5780 RMSE: 2.9288
+2024-10-14T21:51:05IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:51:05IST root         INFO     Epoch 138/500
+2024-10-14T21:51:05IST root         INFO     ----------
+2024-10-14T21:51:28IST root         INFO     Training:   Loss: 3.9927 RMSE: 1.9982
+2024-10-14T21:51:31IST root         INFO     Validation: Loss: 8.7465 RMSE: 2.9574
+2024-10-14T21:51:31IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:51:31IST root         INFO     Epoch 139/500
+2024-10-14T21:51:31IST root         INFO     ----------
+2024-10-14T21:51:54IST root         INFO     Training:   Loss: 3.9680 RMSE: 1.9920
+2024-10-14T21:51:56IST root         INFO     Validation: Loss: 9.3185 RMSE: 3.0526
+2024-10-14T21:51:56IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:51:56IST root         INFO     Epoch 140/500
+2024-10-14T21:51:56IST root         INFO     ----------
+2024-10-14T21:52:19IST root         INFO     Training:   Loss: 3.9751 RMSE: 1.9938
+2024-10-14T21:52:21IST root         INFO     Validation: Loss: 13.6102 RMSE: 3.6892
+2024-10-14T21:52:21IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:52:22IST root         INFO     Epoch 141/500
+2024-10-14T21:52:22IST root         INFO     ----------
+2024-10-14T21:52:44IST root         INFO     Training:   Loss: 4.0132 RMSE: 2.0033
+2024-10-14T21:52:46IST root         INFO     Validation: Loss: 9.1430 RMSE: 3.0237
+2024-10-14T21:52:46IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T21:52:46IST root         INFO     Epoch 142/500
+2024-10-14T21:52:46IST root         INFO     ----------
+2024-10-14T21:53:09IST root         INFO     Training:   Loss: 3.9438 RMSE: 1.9859
+2024-10-14T21:53:11IST root         INFO     Validation: Loss: 10.6882 RMSE: 3.2693
+2024-10-14T21:53:11IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:53:12IST root         INFO     Epoch 143/500
+2024-10-14T21:53:12IST root         INFO     ----------
+2024-10-14T21:53:35IST root         INFO     Training:   Loss: 3.9436 RMSE: 1.9859
+2024-10-14T21:53:37IST root         INFO     Validation: Loss: 9.6552 RMSE: 3.1073
+2024-10-14T21:53:37IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:53:37IST root         INFO     Epoch 144/500
+2024-10-14T21:53:37IST root         INFO     ----------
+2024-10-14T21:54:00IST root         INFO     Training:   Loss: 3.8093 RMSE: 1.9517
+2024-10-14T21:54:02IST root         INFO     Validation: Loss: 9.4168 RMSE: 3.0687
+2024-10-14T21:54:02IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:54:02IST root         INFO     Epoch 145/500
+2024-10-14T21:54:02IST root         INFO     ----------
+2024-10-14T21:54:25IST root         INFO     Training:   Loss: 3.9580 RMSE: 1.9895
+2024-10-14T21:54:27IST root         INFO     Validation: Loss: 8.8494 RMSE: 2.9748
+2024-10-14T21:54:27IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:54:27IST root         INFO     Epoch 146/500
+2024-10-14T21:54:27IST root         INFO     ----------
+2024-10-14T21:54:49IST root         INFO     Training:   Loss: 3.9656 RMSE: 1.9914
+2024-10-14T21:54:52IST root         INFO     Validation: Loss: 10.2180 RMSE: 3.1966
+2024-10-14T21:54:52IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:54:52IST root         INFO     Epoch 147/500
+2024-10-14T21:54:52IST root         INFO     ----------
+2024-10-14T21:55:15IST root         INFO     Training:   Loss: 3.8509 RMSE: 1.9624
+2024-10-14T21:55:17IST root         INFO     Validation: Loss: 8.6427 RMSE: 2.9398
+2024-10-14T21:55:17IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:55:17IST root         INFO     Epoch 148/500
+2024-10-14T21:55:17IST root         INFO     ----------
+2024-10-14T21:55:40IST root         INFO     Training:   Loss: 3.7462 RMSE: 1.9355
+2024-10-14T21:55:43IST root         INFO     Validation: Loss: 9.2920 RMSE: 3.0483
+2024-10-14T21:55:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:55:43IST root         INFO     Epoch 149/500
+2024-10-14T21:55:43IST root         INFO     ----------
+2024-10-14T21:56:06IST root         INFO     Training:   Loss: 5.3718 RMSE: 2.3177
+2024-10-14T21:56:08IST root         INFO     Validation: Loss: 10.2403 RMSE: 3.2000
+2024-10-14T21:56:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:56:08IST root         INFO     Epoch 150/500
+2024-10-14T21:56:08IST root         INFO     ----------
+2024-10-14T21:56:32IST root         INFO     Training:   Loss: 4.9855 RMSE: 2.2328
+2024-10-14T21:56:34IST root         INFO     Validation: Loss: 9.1130 RMSE: 3.0188
+2024-10-14T21:56:34IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T21:56:34IST root         INFO     Epoch 151/500
+2024-10-14T21:56:34IST root         INFO     ----------
+2024-10-14T21:56:57IST root         INFO     Training:   Loss: 4.4144 RMSE: 2.1011
+2024-10-14T21:56:59IST root         INFO     Validation: Loss: 9.2986 RMSE: 3.0494
+2024-10-14T21:56:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:56:59IST root         INFO     Epoch 152/500
+2024-10-14T21:56:59IST root         INFO     ----------
+2024-10-14T21:57:22IST root         INFO     Training:   Loss: 4.0533 RMSE: 2.0133
+2024-10-14T21:57:24IST root         INFO     Validation: Loss: 9.1587 RMSE: 3.0263
+2024-10-14T21:57:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:57:24IST root         INFO     Epoch 153/500
+2024-10-14T21:57:24IST root         INFO     ----------
+2024-10-14T21:57:47IST root         INFO     Training:   Loss: 3.9866 RMSE: 1.9966
+2024-10-14T21:57:49IST root         INFO     Validation: Loss: 10.9323 RMSE: 3.3064
+2024-10-14T21:57:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:57:49IST root         INFO     Epoch 154/500
+2024-10-14T21:57:49IST root         INFO     ----------
+2024-10-14T21:58:12IST root         INFO     Training:   Loss: 4.0028 RMSE: 2.0007
+2024-10-14T21:58:14IST root         INFO     Validation: Loss: 9.0892 RMSE: 3.0148
+2024-10-14T21:58:14IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:58:15IST root         INFO     Epoch 155/500
+2024-10-14T21:58:15IST root         INFO     ----------
+2024-10-14T21:58:37IST root         INFO     Training:   Loss: 3.9191 RMSE: 1.9797
+2024-10-14T21:58:39IST root         INFO     Validation: Loss: 11.1742 RMSE: 3.3428
+2024-10-14T21:58:39IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:58:39IST root         INFO     Epoch 156/500
+2024-10-14T21:58:39IST root         INFO     ----------
+2024-10-14T21:59:02IST root         INFO     Training:   Loss: 3.7158 RMSE: 1.9276
+2024-10-14T21:59:04IST root         INFO     Validation: Loss: 8.9800 RMSE: 2.9967
+2024-10-14T21:59:04IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:59:04IST root         INFO     Epoch 157/500
+2024-10-14T21:59:04IST root         INFO     ----------
+2024-10-14T21:59:27IST root         INFO     Training:   Loss: 3.8072 RMSE: 1.9512
+2024-10-14T21:59:30IST root         INFO     Validation: Loss: 8.9659 RMSE: 2.9943
+2024-10-14T21:59:30IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:59:30IST root         INFO     Epoch 158/500
+2024-10-14T21:59:30IST root         INFO     ----------
+2024-10-14T21:59:52IST root         INFO     Training:   Loss: 3.9648 RMSE: 1.9912
+2024-10-14T21:59:54IST root         INFO     Validation: Loss: 9.8359 RMSE: 3.1362
+2024-10-14T21:59:54IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T21:59:55IST root         INFO     Epoch 159/500
+2024-10-14T21:59:55IST root         INFO     ----------
+2024-10-14T22:00:17IST root         INFO     Training:   Loss: 3.7638 RMSE: 1.9401
+2024-10-14T22:00:20IST root         INFO     Validation: Loss: 10.0073 RMSE: 3.1634
+2024-10-14T22:00:20IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:00:20IST root         INFO     Epoch 160/500
+2024-10-14T22:00:20IST root         INFO     ----------
+2024-10-14T22:00:42IST root         INFO     Training:   Loss: 3.6225 RMSE: 1.9033
+2024-10-14T22:00:45IST root         INFO     Validation: Loss: 10.9504 RMSE: 3.3091
+2024-10-14T22:00:45IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:00:45IST root         INFO     Epoch 161/500
+2024-10-14T22:00:45IST root         INFO     ----------
+2024-10-14T22:01:08IST root         INFO     Training:   Loss: 3.6476 RMSE: 1.9099
+2024-10-14T22:01:10IST root         INFO     Validation: Loss: 10.2437 RMSE: 3.2006
+2024-10-14T22:01:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:01:10IST root         INFO     Epoch 162/500
+2024-10-14T22:01:10IST root         INFO     ----------
+2024-10-14T22:01:32IST root         INFO     Training:   Loss: 3.4956 RMSE: 1.8696
+2024-10-14T22:01:35IST root         INFO     Validation: Loss: 9.2739 RMSE: 3.0453
+2024-10-14T22:01:35IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:01:35IST root         INFO     Epoch 163/500
+2024-10-14T22:01:35IST root         INFO     ----------
+2024-10-14T22:01:57IST root         INFO     Training:   Loss: 3.6577 RMSE: 1.9125
+2024-10-14T22:01:59IST root         INFO     Validation: Loss: 9.0279 RMSE: 3.0046
+2024-10-14T22:01:59IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:01:59IST root         INFO     Epoch 164/500
+2024-10-14T22:01:59IST root         INFO     ----------
+2024-10-14T22:02:22IST root         INFO     Training:   Loss: 3.5741 RMSE: 1.8905
+2024-10-14T22:02:24IST root         INFO     Validation: Loss: 9.3887 RMSE: 3.0641
+2024-10-14T22:02:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:02:24IST root         INFO     Epoch 165/500
+2024-10-14T22:02:24IST root         INFO     ----------
+2024-10-14T22:02:47IST root         INFO     Training:   Loss: 3.5082 RMSE: 1.8730
+2024-10-14T22:02:49IST root         INFO     Validation: Loss: 9.5873 RMSE: 3.0963
+2024-10-14T22:02:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:02:49IST root         INFO     Epoch 166/500
+2024-10-14T22:02:49IST root         INFO     ----------
+2024-10-14T22:03:11IST root         INFO     Training:   Loss: 3.7852 RMSE: 1.9456
+2024-10-14T22:03:14IST root         INFO     Validation: Loss: 9.9599 RMSE: 3.1559
+2024-10-14T22:03:14IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:03:14IST root         INFO     Epoch 167/500
+2024-10-14T22:03:14IST root         INFO     ----------
+2024-10-14T22:03:37IST root         INFO     Training:   Loss: 3.5943 RMSE: 1.8959
+2024-10-14T22:03:39IST root         INFO     Validation: Loss: 8.5902 RMSE: 2.9309
+2024-10-14T22:03:39IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:03:39IST root         INFO     Epoch 168/500
+2024-10-14T22:03:39IST root         INFO     ----------
+2024-10-14T22:04:01IST root         INFO     Training:   Loss: 3.5170 RMSE: 1.8754
+2024-10-14T22:04:04IST root         INFO     Validation: Loss: 9.4248 RMSE: 3.0700
+2024-10-14T22:04:04IST root         INFO     Early stopping...
+2024-10-14T22:04:04IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:04:04IST root         INFO     Epoch 169/500
+2024-10-14T22:04:04IST root         INFO     ----------
+2024-10-14T22:04:26IST root         INFO     Training:   Loss: 4.1890 RMSE: 2.0467
+2024-10-14T22:04:28IST root         INFO     Validation: Loss: 9.1350 RMSE: 3.0224
+2024-10-14T22:04:28IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:04:28IST root         INFO     Epoch 170/500
+2024-10-14T22:04:28IST root         INFO     ----------
+2024-10-14T22:04:52IST root         INFO     Training:   Loss: 3.6506 RMSE: 1.9106
+2024-10-14T22:04:54IST root         INFO     Validation: Loss: 8.8761 RMSE: 2.9793
+2024-10-14T22:04:54IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:04:55IST root         INFO     Epoch 171/500
+2024-10-14T22:04:55IST root         INFO     ----------
+2024-10-14T22:05:17IST root         INFO     Training:   Loss: 3.5176 RMSE: 1.8755
+2024-10-14T22:05:20IST root         INFO     Validation: Loss: 8.0393 RMSE: 2.8354
+2024-10-14T22:05:20IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:05:20IST root         INFO     Epoch 172/500
+2024-10-14T22:05:20IST root         INFO     ----------
+2024-10-14T22:05:42IST root         INFO     Training:   Loss: 4.5510 RMSE: 2.1333
+2024-10-14T22:05:45IST root         INFO     Validation: Loss: 9.4227 RMSE: 3.0696
+2024-10-14T22:05:45IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:05:45IST root         INFO     Epoch 173/500
+2024-10-14T22:05:45IST root         INFO     ----------
+2024-10-14T22:06:08IST root         INFO     Training:   Loss: 3.8953 RMSE: 1.9736
+2024-10-14T22:06:10IST root         INFO     Validation: Loss: 10.0909 RMSE: 3.1766
+2024-10-14T22:06:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:06:10IST root         INFO     Epoch 174/500
+2024-10-14T22:06:10IST root         INFO     ----------
+2024-10-14T22:06:33IST root         INFO     Training:   Loss: 5.4833 RMSE: 2.3417
+2024-10-14T22:06:35IST root         INFO     Validation: Loss: 9.7530 RMSE: 3.1230
+2024-10-14T22:06:35IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:06:35IST root         INFO     Epoch 175/500
+2024-10-14T22:06:35IST root         INFO     ----------
+2024-10-14T22:06:58IST root         INFO     Training:   Loss: 4.2215 RMSE: 2.0546
+2024-10-14T22:07:00IST root         INFO     Validation: Loss: 9.0454 RMSE: 3.0076
+2024-10-14T22:07:00IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:07:00IST root         INFO     Epoch 176/500
+2024-10-14T22:07:00IST root         INFO     ----------
+2024-10-14T22:07:22IST root         INFO     Training:   Loss: 3.8904 RMSE: 1.9724
+2024-10-14T22:07:24IST root         INFO     Validation: Loss: 8.8627 RMSE: 2.9770
+2024-10-14T22:07:24IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:07:25IST root         INFO     Epoch 177/500
+2024-10-14T22:07:25IST root         INFO     ----------
+2024-10-14T22:07:47IST root         INFO     Training:   Loss: 3.5892 RMSE: 1.8945
+2024-10-14T22:07:50IST root         INFO     Validation: Loss: 9.1034 RMSE: 3.0172
+2024-10-14T22:07:50IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:07:50IST root         INFO     Epoch 178/500
+2024-10-14T22:07:50IST root         INFO     ----------
+2024-10-14T22:08:12IST root         INFO     Training:   Loss: 3.4903 RMSE: 1.8682
+2024-10-14T22:08:15IST root         INFO     Validation: Loss: 7.6772 RMSE: 2.7708
+2024-10-14T22:08:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:08:15IST root         INFO     Epoch 179/500
+2024-10-14T22:08:15IST root         INFO     ----------
+2024-10-14T22:08:38IST root         INFO     Training:   Loss: 3.2646 RMSE: 1.8068
+2024-10-14T22:08:40IST root         INFO     Validation: Loss: 8.4738 RMSE: 2.9110
+2024-10-14T22:08:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:08:40IST root         INFO     Epoch 180/500
+2024-10-14T22:08:40IST root         INFO     ----------
+2024-10-14T22:09:04IST root         INFO     Training:   Loss: 3.3524 RMSE: 1.8310
+2024-10-14T22:09:06IST root         INFO     Validation: Loss: 8.4818 RMSE: 2.9124
+2024-10-14T22:09:06IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:09:06IST root         INFO     Epoch 181/500
+2024-10-14T22:09:06IST root         INFO     ----------
+2024-10-14T22:09:29IST root         INFO     Training:   Loss: 3.2913 RMSE: 1.8142
+2024-10-14T22:09:32IST root         INFO     Validation: Loss: 6.7621 RMSE: 2.6004
+2024-10-14T22:09:32IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:09:32IST root         INFO     Epoch 182/500
+2024-10-14T22:09:32IST root         INFO     ----------
+2024-10-14T22:09:55IST root         INFO     Training:   Loss: 3.1166 RMSE: 1.7654
+2024-10-14T22:09:57IST root         INFO     Validation: Loss: 7.4235 RMSE: 2.7246
+2024-10-14T22:09:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:09:58IST root         INFO     Epoch 183/500
+2024-10-14T22:09:58IST root         INFO     ----------
+2024-10-14T22:10:20IST root         INFO     Training:   Loss: 3.1642 RMSE: 1.7788
+2024-10-14T22:10:22IST root         INFO     Validation: Loss: 6.7957 RMSE: 2.6069
+2024-10-14T22:10:22IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:10:22IST root         INFO     Epoch 184/500
+2024-10-14T22:10:22IST root         INFO     ----------
+2024-10-14T22:10:45IST root         INFO     Training:   Loss: 3.3125 RMSE: 1.8200
+2024-10-14T22:10:47IST root         INFO     Validation: Loss: 7.4660 RMSE: 2.7324
+2024-10-14T22:10:47IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:10:48IST root         INFO     Epoch 185/500
+2024-10-14T22:10:48IST root         INFO     ----------
+2024-10-14T22:11:11IST root         INFO     Training:   Loss: 3.1274 RMSE: 1.7684
+2024-10-14T22:11:13IST root         INFO     Validation: Loss: 7.9914 RMSE: 2.8269
+2024-10-14T22:11:13IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:11:13IST root         INFO     Epoch 186/500
+2024-10-14T22:11:13IST root         INFO     ----------
+2024-10-14T22:11:35IST root         INFO     Training:   Loss: 4.8807 RMSE: 2.2092
+2024-10-14T22:11:38IST root         INFO     Validation: Loss: 8.4525 RMSE: 2.9073
+2024-10-14T22:11:38IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:11:38IST root         INFO     Epoch 187/500
+2024-10-14T22:11:38IST root         INFO     ----------
+2024-10-14T22:12:02IST root         INFO     Training:   Loss: 4.6280 RMSE: 2.1513
+2024-10-14T22:12:04IST root         INFO     Validation: Loss: 8.4950 RMSE: 2.9146
+2024-10-14T22:12:04IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:12:04IST root         INFO     Epoch 188/500
+2024-10-14T22:12:04IST root         INFO     ----------
+2024-10-14T22:12:26IST root         INFO     Training:   Loss: 3.8429 RMSE: 1.9603
+2024-10-14T22:12:29IST root         INFO     Validation: Loss: 7.8790 RMSE: 2.8070
+2024-10-14T22:12:29IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:12:29IST root         INFO     Epoch 189/500
+2024-10-14T22:12:29IST root         INFO     ----------
+2024-10-14T22:12:52IST root         INFO     Training:   Loss: 3.5368 RMSE: 1.8807
+2024-10-14T22:12:54IST root         INFO     Validation: Loss: 8.5447 RMSE: 2.9231
+2024-10-14T22:12:54IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:12:54IST root         INFO     Epoch 190/500
+2024-10-14T22:12:54IST root         INFO     ----------
+2024-10-14T22:13:16IST root         INFO     Training:   Loss: 3.1599 RMSE: 1.7776
+2024-10-14T22:13:19IST root         INFO     Validation: Loss: 6.9986 RMSE: 2.6455
+2024-10-14T22:13:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:13:19IST root         INFO     Epoch 191/500
+2024-10-14T22:13:19IST root         INFO     ----------
+2024-10-14T22:13:42IST root         INFO     Training:   Loss: 3.2800 RMSE: 1.8111
+2024-10-14T22:13:44IST root         INFO     Validation: Loss: 6.7262 RMSE: 2.5935
+2024-10-14T22:13:44IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:13:44IST root         INFO     Epoch 192/500
+2024-10-14T22:13:44IST root         INFO     ----------
+2024-10-14T22:14:06IST root         INFO     Training:   Loss: 3.1405 RMSE: 1.7721
+2024-10-14T22:14:09IST root         INFO     Validation: Loss: 7.8777 RMSE: 2.8067
+2024-10-14T22:14:09IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:14:09IST root         INFO     Epoch 193/500
+2024-10-14T22:14:09IST root         INFO     ----------
+2024-10-14T22:14:32IST root         INFO     Training:   Loss: 3.0417 RMSE: 1.7440
+2024-10-14T22:14:34IST root         INFO     Validation: Loss: 7.0601 RMSE: 2.6571
+2024-10-14T22:14:34IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:14:34IST root         INFO     Epoch 194/500
+2024-10-14T22:14:34IST root         INFO     ----------
+2024-10-14T22:14:56IST root         INFO     Training:   Loss: 2.8752 RMSE: 1.6956
+2024-10-14T22:14:59IST root         INFO     Validation: Loss: 7.1490 RMSE: 2.6738
+2024-10-14T22:14:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:14:59IST root         INFO     Epoch 195/500
+2024-10-14T22:14:59IST root         INFO     ----------
+2024-10-14T22:15:22IST root         INFO     Training:   Loss: 2.8189 RMSE: 1.6789
+2024-10-14T22:15:24IST root         INFO     Validation: Loss: 7.2122 RMSE: 2.6855
+2024-10-14T22:15:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:15:24IST root         INFO     Epoch 196/500
+2024-10-14T22:15:24IST root         INFO     ----------
+2024-10-14T22:15:46IST root         INFO     Training:   Loss: 2.9843 RMSE: 1.7275
+2024-10-14T22:15:49IST root         INFO     Validation: Loss: 6.3317 RMSE: 2.5163
+2024-10-14T22:15:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:15:49IST root         INFO     Epoch 197/500
+2024-10-14T22:15:49IST root         INFO     ----------
+2024-10-14T22:16:12IST root         INFO     Training:   Loss: 2.8880 RMSE: 1.6994
+2024-10-14T22:16:14IST root         INFO     Validation: Loss: 8.6965 RMSE: 2.9490
+2024-10-14T22:16:14IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:16:14IST root         INFO     Epoch 198/500
+2024-10-14T22:16:14IST root         INFO     ----------
+2024-10-14T22:16:36IST root         INFO     Training:   Loss: 2.7141 RMSE: 1.6474
+2024-10-14T22:16:39IST root         INFO     Validation: Loss: 6.6701 RMSE: 2.5827
+2024-10-14T22:16:39IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:16:39IST root         INFO     Epoch 199/500
+2024-10-14T22:16:39IST root         INFO     ----------
+2024-10-14T22:17:01IST root         INFO     Training:   Loss: 2.6509 RMSE: 1.6282
+2024-10-14T22:17:04IST root         INFO     Validation: Loss: 7.9067 RMSE: 2.8119
+2024-10-14T22:17:04IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:17:04IST root         INFO     Epoch 200/500
+2024-10-14T22:17:04IST root         INFO     ----------
+2024-10-14T22:17:28IST root         INFO     Training:   Loss: 2.7244 RMSE: 1.6506
+2024-10-14T22:17:30IST root         INFO     Validation: Loss: 7.0599 RMSE: 2.6571
+2024-10-14T22:17:30IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:17:31IST root         INFO     Epoch 201/500
+2024-10-14T22:17:31IST root         INFO     ----------
+2024-10-14T22:17:53IST root         INFO     Training:   Loss: 2.7882 RMSE: 1.6698
+2024-10-14T22:17:56IST root         INFO     Validation: Loss: 7.9507 RMSE: 2.8197
+2024-10-14T22:17:56IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:17:56IST root         INFO     Epoch 202/500
+2024-10-14T22:17:56IST root         INFO     ----------
+2024-10-14T22:18:18IST root         INFO     Training:   Loss: 3.4523 RMSE: 1.8580
+2024-10-14T22:18:20IST root         INFO     Validation: Loss: 7.8320 RMSE: 2.7986
+2024-10-14T22:18:20IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:18:21IST root         INFO     Epoch 203/500
+2024-10-14T22:18:21IST root         INFO     ----------
+2024-10-14T22:18:43IST root         INFO     Training:   Loss: 3.7320 RMSE: 1.9318
+2024-10-14T22:18:45IST root         INFO     Validation: Loss: 7.7336 RMSE: 2.7809
+2024-10-14T22:18:45IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:18:45IST root         INFO     Epoch 204/500
+2024-10-14T22:18:45IST root         INFO     ----------
+2024-10-14T22:19:08IST root         INFO     Training:   Loss: 3.1619 RMSE: 1.7782
+2024-10-14T22:19:10IST root         INFO     Validation: Loss: 7.6988 RMSE: 2.7747
+2024-10-14T22:19:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:19:10IST root         INFO     Epoch 205/500
+2024-10-14T22:19:10IST root         INFO     ----------
+2024-10-14T22:19:33IST root         INFO     Training:   Loss: 3.0243 RMSE: 1.7390
+2024-10-14T22:19:36IST root         INFO     Validation: Loss: 8.0080 RMSE: 2.8298
+2024-10-14T22:19:36IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:19:36IST root         INFO     Epoch 206/500
+2024-10-14T22:19:36IST root         INFO     ----------
+2024-10-14T22:19:59IST root         INFO     Training:   Loss: 2.7466 RMSE: 1.6573
+2024-10-14T22:20:01IST root         INFO     Validation: Loss: 7.3048 RMSE: 2.7027
+2024-10-14T22:20:01IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:20:02IST root         INFO     Epoch 207/500
+2024-10-14T22:20:02IST root         INFO     ----------
+2024-10-14T22:20:24IST root         INFO     Training:   Loss: 2.7348 RMSE: 1.6537
+2024-10-14T22:20:26IST root         INFO     Validation: Loss: 6.4968 RMSE: 2.5489
+2024-10-14T22:20:26IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:20:26IST root         INFO     Epoch 208/500
+2024-10-14T22:20:26IST root         INFO     ----------
+2024-10-14T22:20:48IST root         INFO     Training:   Loss: 2.4775 RMSE: 1.5740
+2024-10-14T22:20:51IST root         INFO     Validation: Loss: 7.0245 RMSE: 2.6504
+2024-10-14T22:20:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:20:51IST root         INFO     Epoch 209/500
+2024-10-14T22:20:51IST root         INFO     ----------
+2024-10-14T22:21:16IST root         INFO     Training:   Loss: 2.7574 RMSE: 1.6606
+2024-10-14T22:21:18IST root         INFO     Validation: Loss: 6.8331 RMSE: 2.6140
+2024-10-14T22:21:18IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:21:18IST root         INFO     Epoch 210/500
+2024-10-14T22:21:18IST root         INFO     ----------
+2024-10-14T22:21:41IST root         INFO     Training:   Loss: 3.0323 RMSE: 1.7414
+2024-10-14T22:21:43IST root         INFO     Validation: Loss: 8.0061 RMSE: 2.8295
+2024-10-14T22:21:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:21:44IST root         INFO     Epoch 211/500
+2024-10-14T22:21:44IST root         INFO     ----------
+2024-10-14T22:22:06IST root         INFO     Training:   Loss: 2.5933 RMSE: 1.6104
+2024-10-14T22:22:08IST root         INFO     Validation: Loss: 8.1198 RMSE: 2.8495
+2024-10-14T22:22:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:22:08IST root         INFO     Epoch 212/500
+2024-10-14T22:22:08IST root         INFO     ----------
+2024-10-14T22:22:31IST root         INFO     Training:   Loss: 2.7253 RMSE: 1.6508
+2024-10-14T22:22:33IST root         INFO     Validation: Loss: 6.9868 RMSE: 2.6433
+2024-10-14T22:22:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:22:34IST root         INFO     Epoch 213/500
+2024-10-14T22:22:34IST root         INFO     ----------
+2024-10-14T22:22:57IST root         INFO     Training:   Loss: 2.4532 RMSE: 1.5663
+2024-10-14T22:22:59IST root         INFO     Validation: Loss: 6.7818 RMSE: 2.6042
+2024-10-14T22:22:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:22:59IST root         INFO     Epoch 214/500
+2024-10-14T22:22:59IST root         INFO     ----------
+2024-10-14T22:23:21IST root         INFO     Training:   Loss: 2.5514 RMSE: 1.5973
+2024-10-14T22:23:24IST root         INFO     Validation: Loss: 6.6890 RMSE: 2.5863
+2024-10-14T22:23:24IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:23:24IST root         INFO     Epoch 215/500
+2024-10-14T22:23:24IST root         INFO     ----------
+2024-10-14T22:23:48IST root         INFO     Training:   Loss: 2.7034 RMSE: 1.6442
+2024-10-14T22:23:50IST root         INFO     Validation: Loss: 6.8942 RMSE: 2.6257
+2024-10-14T22:23:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:23:50IST root         INFO     Epoch 216/500
+2024-10-14T22:23:50IST root         INFO     ----------
+2024-10-14T22:24:13IST root         INFO     Training:   Loss: 2.7273 RMSE: 1.6515
+2024-10-14T22:24:15IST root         INFO     Validation: Loss: 7.0465 RMSE: 2.6545
+2024-10-14T22:24:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:24:16IST root         INFO     Epoch 217/500
+2024-10-14T22:24:16IST root         INFO     ----------
+2024-10-14T22:24:38IST root         INFO     Training:   Loss: 2.6201 RMSE: 1.6187
+2024-10-14T22:24:41IST root         INFO     Validation: Loss: 7.2179 RMSE: 2.6866
+2024-10-14T22:24:41IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:24:41IST root         INFO     Epoch 218/500
+2024-10-14T22:24:41IST root         INFO     ----------
+2024-10-14T22:25:03IST root         INFO     Training:   Loss: 2.5450 RMSE: 1.5953
+2024-10-14T22:25:05IST root         INFO     Validation: Loss: 7.1468 RMSE: 2.6733
+2024-10-14T22:25:05IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:25:06IST root         INFO     Epoch 219/500
+2024-10-14T22:25:06IST root         INFO     ----------
+2024-10-14T22:25:28IST root         INFO     Training:   Loss: 2.4104 RMSE: 1.5525
+2024-10-14T22:25:30IST root         INFO     Validation: Loss: 8.2536 RMSE: 2.8729
+2024-10-14T22:25:30IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:25:30IST root         INFO     Epoch 220/500
+2024-10-14T22:25:30IST root         INFO     ----------
+2024-10-14T22:25:52IST root         INFO     Training:   Loss: 2.4960 RMSE: 1.5799
+2024-10-14T22:25:55IST root         INFO     Validation: Loss: 5.9050 RMSE: 2.4300
+2024-10-14T22:25:55IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:25:55IST root         INFO     Epoch 221/500
+2024-10-14T22:25:55IST root         INFO     ----------
+2024-10-14T22:26:18IST root         INFO     Training:   Loss: 2.3876 RMSE: 1.5452
+2024-10-14T22:26:20IST root         INFO     Validation: Loss: 6.6857 RMSE: 2.5857
+2024-10-14T22:26:20IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:26:20IST root         INFO     Epoch 222/500
+2024-10-14T22:26:20IST root         INFO     ----------
+2024-10-14T22:26:43IST root         INFO     Training:   Loss: 2.4121 RMSE: 1.5531
+2024-10-14T22:26:45IST root         INFO     Validation: Loss: 5.7994 RMSE: 2.4082
+2024-10-14T22:26:45IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:26:46IST root         INFO     Epoch 223/500
+2024-10-14T22:26:46IST root         INFO     ----------
+2024-10-14T22:27:08IST root         INFO     Training:   Loss: 2.3385 RMSE: 1.5292
+2024-10-14T22:27:11IST root         INFO     Validation: Loss: 7.6827 RMSE: 2.7718
+2024-10-14T22:27:11IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:27:11IST root         INFO     Epoch 224/500
+2024-10-14T22:27:11IST root         INFO     ----------
+2024-10-14T22:27:33IST root         INFO     Training:   Loss: 2.5944 RMSE: 1.6107
+2024-10-14T22:27:35IST root         INFO     Validation: Loss: 7.5107 RMSE: 2.7406
+2024-10-14T22:27:35IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:27:36IST root         INFO     Epoch 225/500
+2024-10-14T22:27:36IST root         INFO     ----------
+2024-10-14T22:27:58IST root         INFO     Training:   Loss: 2.3329 RMSE: 1.5274
+2024-10-14T22:28:00IST root         INFO     Validation: Loss: 6.2664 RMSE: 2.5033
+2024-10-14T22:28:00IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:28:00IST root         INFO     Epoch 226/500
+2024-10-14T22:28:00IST root         INFO     ----------
+2024-10-14T22:28:23IST root         INFO     Training:   Loss: 2.4451 RMSE: 1.5637
+2024-10-14T22:28:25IST root         INFO     Validation: Loss: 7.1523 RMSE: 2.6744
+2024-10-14T22:28:25IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:28:26IST root         INFO     Epoch 227/500
+2024-10-14T22:28:26IST root         INFO     ----------
+2024-10-14T22:28:48IST root         INFO     Training:   Loss: 2.5019 RMSE: 1.5817
+2024-10-14T22:28:50IST root         INFO     Validation: Loss: 6.0486 RMSE: 2.4594
+2024-10-14T22:28:50IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:28:50IST root         INFO     Epoch 228/500
+2024-10-14T22:28:50IST root         INFO     ----------
+2024-10-14T22:29:14IST root         INFO     Training:   Loss: 2.2850 RMSE: 1.5116
+2024-10-14T22:29:17IST root         INFO     Validation: Loss: 7.4938 RMSE: 2.7375
+2024-10-14T22:29:17IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:29:17IST root         INFO     Epoch 229/500
+2024-10-14T22:29:17IST root         INFO     ----------
+2024-10-14T22:29:40IST root         INFO     Training:   Loss: 2.6419 RMSE: 1.6254
+2024-10-14T22:29:43IST root         INFO     Validation: Loss: 6.2776 RMSE: 2.5055
+2024-10-14T22:29:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:29:43IST root         INFO     Epoch 230/500
+2024-10-14T22:29:43IST root         INFO     ----------
+2024-10-14T22:30:05IST root         INFO     Training:   Loss: 2.3406 RMSE: 1.5299
+2024-10-14T22:30:07IST root         INFO     Validation: Loss: 6.9478 RMSE: 2.6359
+2024-10-14T22:30:07IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:30:08IST root         INFO     Epoch 231/500
+2024-10-14T22:30:08IST root         INFO     ----------
+2024-10-14T22:30:30IST root         INFO     Training:   Loss: 2.3361 RMSE: 1.5284
+2024-10-14T22:30:33IST root         INFO     Validation: Loss: 6.0443 RMSE: 2.4585
+2024-10-14T22:30:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:30:33IST root         INFO     Epoch 232/500
+2024-10-14T22:30:33IST root         INFO     ----------
+2024-10-14T22:30:55IST root         INFO     Training:   Loss: 2.4292 RMSE: 1.5586
+2024-10-14T22:30:58IST root         INFO     Validation: Loss: 6.2517 RMSE: 2.5003
+2024-10-14T22:30:58IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:30:58IST root         INFO     Epoch 233/500
+2024-10-14T22:30:58IST root         INFO     ----------
+2024-10-14T22:31:20IST root         INFO     Training:   Loss: 2.2657 RMSE: 1.5052
+2024-10-14T22:31:23IST root         INFO     Validation: Loss: 7.2092 RMSE: 2.6850
+2024-10-14T22:31:23IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:31:23IST root         INFO     Epoch 234/500
+2024-10-14T22:31:23IST root         INFO     ----------
+2024-10-14T22:31:45IST root         INFO     Training:   Loss: 2.2827 RMSE: 1.5109
+2024-10-14T22:31:48IST root         INFO     Validation: Loss: 7.7014 RMSE: 2.7751
+2024-10-14T22:31:48IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:31:48IST root         INFO     Epoch 235/500
+2024-10-14T22:31:48IST root         INFO     ----------
+2024-10-14T22:32:10IST root         INFO     Training:   Loss: 2.3626 RMSE: 1.5371
+2024-10-14T22:32:12IST root         INFO     Validation: Loss: 7.4251 RMSE: 2.7249
+2024-10-14T22:32:12IST root         INFO     Epoch complete in 0m 24s
+2024-10-14T22:32:12IST root         INFO     Epoch 236/500
+2024-10-14T22:32:12IST root         INFO     ----------
+2024-10-14T22:32:35IST root         INFO     Training:   Loss: 2.4551 RMSE: 1.5669
+2024-10-14T22:32:37IST root         INFO     Validation: Loss: 7.6861 RMSE: 2.7724
+2024-10-14T22:32:37IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:32:38IST root         INFO     Epoch 237/500
+2024-10-14T22:32:38IST root         INFO     ----------
+2024-10-14T22:33:01IST root         INFO     Training:   Loss: 2.7711 RMSE: 1.6646
+2024-10-14T22:33:03IST root         INFO     Validation: Loss: 7.5187 RMSE: 2.7420
+2024-10-14T22:33:03IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:33:03IST root         INFO     Epoch 238/500
+2024-10-14T22:33:03IST root         INFO     ----------
+2024-10-14T22:33:25IST root         INFO     Training:   Loss: 3.1838 RMSE: 1.7843
+2024-10-14T22:33:28IST root         INFO     Validation: Loss: 6.5746 RMSE: 2.5641
+2024-10-14T22:33:28IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:33:28IST root         INFO     Epoch 239/500
+2024-10-14T22:33:28IST root         INFO     ----------
+2024-10-14T22:33:51IST root         INFO     Training:   Loss: 2.6478 RMSE: 1.6272
+2024-10-14T22:33:53IST root         INFO     Validation: Loss: 6.6656 RMSE: 2.5818
+2024-10-14T22:33:53IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:33:53IST root         INFO     Epoch 240/500
+2024-10-14T22:33:53IST root         INFO     ----------
+2024-10-14T22:34:16IST root         INFO     Training:   Loss: 2.4914 RMSE: 1.5784
+2024-10-14T22:34:18IST root         INFO     Validation: Loss: 6.4989 RMSE: 2.5493
+2024-10-14T22:34:18IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:34:18IST root         INFO     Epoch 241/500
+2024-10-14T22:34:18IST root         INFO     ----------
+2024-10-14T22:34:41IST root         INFO     Training:   Loss: 2.4947 RMSE: 1.5795
+2024-10-14T22:34:43IST root         INFO     Validation: Loss: 6.4855 RMSE: 2.5467
+2024-10-14T22:34:43IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:34:43IST root         INFO     Epoch 242/500
+2024-10-14T22:34:43IST root         INFO     ----------
+2024-10-14T22:35:06IST root         INFO     Training:   Loss: 2.1979 RMSE: 1.4825
+2024-10-14T22:35:09IST root         INFO     Validation: Loss: 6.4285 RMSE: 2.5354
+2024-10-14T22:35:09IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:35:09IST root         INFO     Epoch 243/500
+2024-10-14T22:35:09IST root         INFO     ----------
+2024-10-14T22:35:32IST root         INFO     Training:   Loss: 2.5263 RMSE: 1.5894
+2024-10-14T22:35:34IST root         INFO     Validation: Loss: 6.5985 RMSE: 2.5688
+2024-10-14T22:35:34IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:35:34IST root         INFO     Epoch 244/500
+2024-10-14T22:35:34IST root         INFO     ----------
+2024-10-14T22:35:56IST root         INFO     Training:   Loss: 2.6360 RMSE: 1.6236
+2024-10-14T22:35:59IST root         INFO     Validation: Loss: 7.9422 RMSE: 2.8182
+2024-10-14T22:35:59IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:35:59IST root         INFO     Epoch 245/500
+2024-10-14T22:35:59IST root         INFO     ----------
+2024-10-14T22:36:23IST root         INFO     Training:   Loss: 2.4758 RMSE: 1.5735
+2024-10-14T22:36:25IST root         INFO     Validation: Loss: 6.2528 RMSE: 2.5006
+2024-10-14T22:36:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:36:25IST root         INFO     Epoch 246/500
+2024-10-14T22:36:25IST root         INFO     ----------
+2024-10-14T22:36:48IST root         INFO     Training:   Loss: 2.2049 RMSE: 1.4849
+2024-10-14T22:36:50IST root         INFO     Validation: Loss: 5.8207 RMSE: 2.4126
+2024-10-14T22:36:50IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:36:50IST root         INFO     Epoch 247/500
+2024-10-14T22:36:50IST root         INFO     ----------
+2024-10-14T22:37:13IST root         INFO     Training:   Loss: 2.2444 RMSE: 1.4981
+2024-10-14T22:37:15IST root         INFO     Validation: Loss: 6.3330 RMSE: 2.5165
+2024-10-14T22:37:15IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:37:15IST root         INFO     Epoch 248/500
+2024-10-14T22:37:15IST root         INFO     ----------
+2024-10-14T22:37:38IST root         INFO     Training:   Loss: 2.3029 RMSE: 1.5175
+2024-10-14T22:37:41IST root         INFO     Validation: Loss: 7.9687 RMSE: 2.8229
+2024-10-14T22:37:41IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:37:41IST root         INFO     Epoch 249/500
+2024-10-14T22:37:41IST root         INFO     ----------
+2024-10-14T22:38:04IST root         INFO     Training:   Loss: 2.2778 RMSE: 1.5092
+2024-10-14T22:38:06IST root         INFO     Validation: Loss: 7.4312 RMSE: 2.7260
+2024-10-14T22:38:06IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:38:06IST root         INFO     Epoch 250/500
+2024-10-14T22:38:06IST root         INFO     ----------
+2024-10-14T22:38:30IST root         INFO     Training:   Loss: 2.2195 RMSE: 1.4898
+2024-10-14T22:38:33IST root         INFO     Validation: Loss: 7.3197 RMSE: 2.7055
+2024-10-14T22:38:33IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:38:33IST root         INFO     Epoch 251/500
+2024-10-14T22:38:33IST root         INFO     ----------
+2024-10-14T22:38:56IST root         INFO     Training:   Loss: 2.3383 RMSE: 1.5292
+2024-10-14T22:38:59IST root         INFO     Validation: Loss: 6.5943 RMSE: 2.5679
+2024-10-14T22:38:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:38:59IST root         INFO     Epoch 252/500
+2024-10-14T22:38:59IST root         INFO     ----------
+2024-10-14T22:39:22IST root         INFO     Training:   Loss: 2.2361 RMSE: 1.4954
+2024-10-14T22:39:25IST root         INFO     Validation: Loss: 6.6304 RMSE: 2.5750
+2024-10-14T22:39:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:39:25IST root         INFO     Epoch 253/500
+2024-10-14T22:39:25IST root         INFO     ----------
+2024-10-14T22:39:48IST root         INFO     Training:   Loss: 2.2678 RMSE: 1.5059
+2024-10-14T22:39:51IST root         INFO     Validation: Loss: 6.9501 RMSE: 2.6363
+2024-10-14T22:39:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:39:51IST root         INFO     Epoch 254/500
+2024-10-14T22:39:51IST root         INFO     ----------
+2024-10-14T22:40:14IST root         INFO     Training:   Loss: 2.2219 RMSE: 1.4906
+2024-10-14T22:40:17IST root         INFO     Validation: Loss: 6.6413 RMSE: 2.5771
+2024-10-14T22:40:17IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:40:17IST root         INFO     Epoch 255/500
+2024-10-14T22:40:17IST root         INFO     ----------
+2024-10-14T22:40:40IST root         INFO     Training:   Loss: 3.2858 RMSE: 1.8127
+2024-10-14T22:40:42IST root         INFO     Validation: Loss: 8.2829 RMSE: 2.8780
+2024-10-14T22:40:42IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:40:42IST root         INFO     Epoch 256/500
+2024-10-14T22:40:42IST root         INFO     ----------
+2024-10-14T22:41:05IST root         INFO     Training:   Loss: 2.8196 RMSE: 1.6792
+2024-10-14T22:41:08IST root         INFO     Validation: Loss: 8.5521 RMSE: 2.9244
+2024-10-14T22:41:08IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:41:08IST root         INFO     Epoch 257/500
+2024-10-14T22:41:08IST root         INFO     ----------
+2024-10-14T22:41:31IST root         INFO     Training:   Loss: 2.7304 RMSE: 1.6524
+2024-10-14T22:41:33IST root         INFO     Validation: Loss: 5.9051 RMSE: 2.4301
+2024-10-14T22:41:33IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:41:33IST root         INFO     Epoch 258/500
+2024-10-14T22:41:33IST root         INFO     ----------
+2024-10-14T22:41:57IST root         INFO     Training:   Loss: 2.3724 RMSE: 1.5402
+2024-10-14T22:42:00IST root         INFO     Validation: Loss: 7.0707 RMSE: 2.6591
+2024-10-14T22:42:00IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:42:00IST root         INFO     Epoch 259/500
+2024-10-14T22:42:00IST root         INFO     ----------
+2024-10-14T22:42:23IST root         INFO     Training:   Loss: 2.8270 RMSE: 1.6814
+2024-10-14T22:42:26IST root         INFO     Validation: Loss: 8.1199 RMSE: 2.8495
+2024-10-14T22:42:26IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:42:26IST root         INFO     Epoch 260/500
+2024-10-14T22:42:26IST root         INFO     ----------
+2024-10-14T22:42:49IST root         INFO     Training:   Loss: 3.3079 RMSE: 1.8188
+2024-10-14T22:42:51IST root         INFO     Validation: Loss: 5.8967 RMSE: 2.4283
+2024-10-14T22:42:51IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:42:52IST root         INFO     Epoch 261/500
+2024-10-14T22:42:52IST root         INFO     ----------
+2024-10-14T22:43:15IST root         INFO     Training:   Loss: 2.6079 RMSE: 1.6149
+2024-10-14T22:43:17IST root         INFO     Validation: Loss: 7.0332 RMSE: 2.6520
+2024-10-14T22:43:17IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:43:17IST root         INFO     Epoch 262/500
+2024-10-14T22:43:17IST root         INFO     ----------
+2024-10-14T22:43:40IST root         INFO     Training:   Loss: 2.4732 RMSE: 1.5727
+2024-10-14T22:43:43IST root         INFO     Validation: Loss: 6.6407 RMSE: 2.5770
+2024-10-14T22:43:43IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:43:43IST root         INFO     Epoch 263/500
+2024-10-14T22:43:43IST root         INFO     ----------
+2024-10-14T22:44:07IST root         INFO     Training:   Loss: 2.2420 RMSE: 1.4973
+2024-10-14T22:44:09IST root         INFO     Validation: Loss: 5.8637 RMSE: 2.4215
+2024-10-14T22:44:09IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:44:09IST root         INFO     Epoch 264/500
+2024-10-14T22:44:09IST root         INFO     ----------
+2024-10-14T22:44:33IST root         INFO     Training:   Loss: 2.3145 RMSE: 1.5213
+2024-10-14T22:44:35IST root         INFO     Validation: Loss: 5.9662 RMSE: 2.4426
+2024-10-14T22:44:35IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:44:35IST root         INFO     Epoch 265/500
+2024-10-14T22:44:35IST root         INFO     ----------
+2024-10-14T22:44:59IST root         INFO     Training:   Loss: 2.3658 RMSE: 1.5381
+2024-10-14T22:45:01IST root         INFO     Validation: Loss: 6.5714 RMSE: 2.5635
+2024-10-14T22:45:01IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:45:01IST root         INFO     Epoch 266/500
+2024-10-14T22:45:01IST root         INFO     ----------
+2024-10-14T22:45:25IST root         INFO     Training:   Loss: 2.2692 RMSE: 1.5064
+2024-10-14T22:45:27IST root         INFO     Validation: Loss: 6.6051 RMSE: 2.5700
+2024-10-14T22:45:27IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:45:28IST root         INFO     Epoch 267/500
+2024-10-14T22:45:28IST root         INFO     ----------
+2024-10-14T22:46:01IST root         INFO     Training:   Loss: 2.1000 RMSE: 1.4491
+2024-10-14T22:46:06IST root         INFO     Validation: Loss: 7.1374 RMSE: 2.6716
+2024-10-14T22:46:06IST root         INFO     Epoch complete in 0m 38s
+2024-10-14T22:46:06IST root         INFO     Epoch 268/500
+2024-10-14T22:46:06IST root         INFO     ----------
+2024-10-14T22:46:48IST root         INFO     Training:   Loss: 2.0784 RMSE: 1.4417
+2024-10-14T22:46:50IST root         INFO     Validation: Loss: 6.3699 RMSE: 2.5239
+2024-10-14T22:46:50IST root         INFO     Epoch complete in 0m 45s
+2024-10-14T22:46:51IST root         INFO     Epoch 269/500
+2024-10-14T22:46:51IST root         INFO     ----------
+2024-10-14T22:47:14IST root         INFO     Training:   Loss: 2.2290 RMSE: 1.4930
+2024-10-14T22:47:17IST root         INFO     Validation: Loss: 7.5055 RMSE: 2.7396
+2024-10-14T22:47:17IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:47:17IST root         INFO     Epoch 270/500
+2024-10-14T22:47:17IST root         INFO     ----------
+2024-10-14T22:47:41IST root         INFO     Training:   Loss: 2.2771 RMSE: 1.5090
+2024-10-14T22:47:43IST root         INFO     Validation: Loss: 6.5443 RMSE: 2.5582
+2024-10-14T22:47:43IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:47:44IST root         INFO     Epoch 271/500
+2024-10-14T22:47:44IST root         INFO     ----------
+2024-10-14T22:48:08IST root         INFO     Training:   Loss: 2.2458 RMSE: 1.4986
+2024-10-14T22:48:10IST root         INFO     Validation: Loss: 8.2592 RMSE: 2.8739
+2024-10-14T22:48:10IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:48:10IST root         INFO     Epoch 272/500
+2024-10-14T22:48:10IST root         INFO     ----------
+2024-10-14T22:48:34IST root         INFO     Training:   Loss: 2.2344 RMSE: 1.4948
+2024-10-14T22:48:36IST root         INFO     Validation: Loss: 7.1638 RMSE: 2.6765
+2024-10-14T22:48:36IST root         INFO     Early stopping...
+2024-10-14T22:48:36IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:48:36IST root         INFO     Epoch 273/500
+2024-10-14T22:48:36IST root         INFO     ----------
+2024-10-14T22:48:59IST root         INFO     Training:   Loss: 2.2602 RMSE: 1.5034
+2024-10-14T22:49:02IST root         INFO     Validation: Loss: 6.6033 RMSE: 2.5697
+2024-10-14T22:49:02IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:49:02IST root         INFO     Epoch 274/500
+2024-10-14T22:49:02IST root         INFO     ----------
+2024-10-14T22:49:25IST root         INFO     Training:   Loss: 2.1935 RMSE: 1.4811
+2024-10-14T22:49:28IST root         INFO     Validation: Loss: 6.4359 RMSE: 2.5369
+2024-10-14T22:49:28IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:49:28IST root         INFO     Epoch 275/500
+2024-10-14T22:49:28IST root         INFO     ----------
+2024-10-14T22:49:52IST root         INFO     Training:   Loss: 2.1595 RMSE: 1.4695
+2024-10-14T22:49:54IST root         INFO     Validation: Loss: 6.9826 RMSE: 2.6425
+2024-10-14T22:49:54IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:49:54IST root         INFO     Epoch 276/500
+2024-10-14T22:49:54IST root         INFO     ----------
+2024-10-14T22:50:17IST root         INFO     Training:   Loss: 2.0602 RMSE: 1.4353
+2024-10-14T22:50:19IST root         INFO     Validation: Loss: 7.0785 RMSE: 2.6605
+2024-10-14T22:50:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:50:20IST root         INFO     Epoch 277/500
+2024-10-14T22:50:20IST root         INFO     ----------
+2024-10-14T22:50:44IST root         INFO     Training:   Loss: 2.2314 RMSE: 1.4938
+2024-10-14T22:50:47IST root         INFO     Validation: Loss: 7.9163 RMSE: 2.8136
+2024-10-14T22:50:47IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:50:47IST root         INFO     Epoch 278/500
+2024-10-14T22:50:47IST root         INFO     ----------
+2024-10-14T22:51:10IST root         INFO     Training:   Loss: 2.2355 RMSE: 1.4952
+2024-10-14T22:51:12IST root         INFO     Validation: Loss: 7.0904 RMSE: 2.6628
+2024-10-14T22:51:12IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:51:13IST root         INFO     Epoch 279/500
+2024-10-14T22:51:13IST root         INFO     ----------
+2024-10-14T22:51:35IST root         INFO     Training:   Loss: 2.1081 RMSE: 1.4519
+2024-10-14T22:51:38IST root         INFO     Validation: Loss: 6.9294 RMSE: 2.6324
+2024-10-14T22:51:38IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T22:51:38IST root         INFO     Epoch 280/500
+2024-10-14T22:51:38IST root         INFO     ----------
+2024-10-14T22:52:02IST root         INFO     Training:   Loss: 2.2889 RMSE: 1.5129
+2024-10-14T22:52:04IST root         INFO     Validation: Loss: 7.8996 RMSE: 2.8106
+2024-10-14T22:52:04IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:52:05IST root         INFO     Epoch 281/500
+2024-10-14T22:52:05IST root         INFO     ----------
+2024-10-14T22:52:28IST root         INFO     Training:   Loss: 2.2913 RMSE: 1.5137
+2024-10-14T22:52:31IST root         INFO     Validation: Loss: 7.4836 RMSE: 2.7356
+2024-10-14T22:52:31IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:52:31IST root         INFO     Epoch 282/500
+2024-10-14T22:52:31IST root         INFO     ----------
+2024-10-14T22:52:54IST root         INFO     Training:   Loss: 2.0925 RMSE: 1.4466
+2024-10-14T22:52:57IST root         INFO     Validation: Loss: 6.4727 RMSE: 2.5442
+2024-10-14T22:52:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:52:57IST root         INFO     Epoch 283/500
+2024-10-14T22:52:57IST root         INFO     ----------
+2024-10-14T22:53:20IST root         INFO     Training:   Loss: 2.0952 RMSE: 1.4475
+2024-10-14T22:53:23IST root         INFO     Validation: Loss: 6.6788 RMSE: 2.5843
+2024-10-14T22:53:23IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:53:23IST root         INFO     Epoch 284/500
+2024-10-14T22:53:23IST root         INFO     ----------
+2024-10-14T22:53:46IST root         INFO     Training:   Loss: 2.2079 RMSE: 1.4859
+2024-10-14T22:53:49IST root         INFO     Validation: Loss: 6.3946 RMSE: 2.5288
+2024-10-14T22:53:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:53:49IST root         INFO     Epoch 285/500
+2024-10-14T22:53:49IST root         INFO     ----------
+2024-10-14T22:54:12IST root         INFO     Training:   Loss: 2.0455 RMSE: 1.4302
+2024-10-14T22:54:15IST root         INFO     Validation: Loss: 6.5515 RMSE: 2.5596
+2024-10-14T22:54:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:54:15IST root         INFO     Epoch 286/500
+2024-10-14T22:54:15IST root         INFO     ----------
+2024-10-14T22:54:38IST root         INFO     Training:   Loss: 2.0070 RMSE: 1.4167
+2024-10-14T22:54:41IST root         INFO     Validation: Loss: 6.6687 RMSE: 2.5824
+2024-10-14T22:54:41IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:54:41IST root         INFO     Epoch 287/500
+2024-10-14T22:54:41IST root         INFO     ----------
+2024-10-14T22:55:05IST root         INFO     Training:   Loss: 1.8796 RMSE: 1.3710
+2024-10-14T22:55:07IST root         INFO     Validation: Loss: 6.0835 RMSE: 2.4665
+2024-10-14T22:55:07IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:55:07IST root         INFO     Epoch 288/500
+2024-10-14T22:55:07IST root         INFO     ----------
+2024-10-14T22:55:31IST root         INFO     Training:   Loss: 2.1393 RMSE: 1.4626
+2024-10-14T22:55:33IST root         INFO     Validation: Loss: 7.4618 RMSE: 2.7316
+2024-10-14T22:55:33IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:55:33IST root         INFO     Epoch 289/500
+2024-10-14T22:55:33IST root         INFO     ----------
+2024-10-14T22:55:57IST root         INFO     Training:   Loss: 1.9981 RMSE: 1.4135
+2024-10-14T22:55:59IST root         INFO     Validation: Loss: 8.3670 RMSE: 2.8926
+2024-10-14T22:55:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:55:59IST root         INFO     Epoch 290/500
+2024-10-14T22:55:59IST root         INFO     ----------
+2024-10-14T22:56:22IST root         INFO     Training:   Loss: 1.9842 RMSE: 1.4086
+2024-10-14T22:56:25IST root         INFO     Validation: Loss: 6.9718 RMSE: 2.6404
+2024-10-14T22:56:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:56:25IST root         INFO     Epoch 291/500
+2024-10-14T22:56:25IST root         INFO     ----------
+2024-10-14T22:56:49IST root         INFO     Training:   Loss: 2.1380 RMSE: 1.4622
+2024-10-14T22:56:52IST root         INFO     Validation: Loss: 6.6593 RMSE: 2.5806
+2024-10-14T22:56:52IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T22:56:52IST root         INFO     Epoch 292/500
+2024-10-14T22:56:52IST root         INFO     ----------
+2024-10-14T22:57:16IST root         INFO     Training:   Loss: 2.0343 RMSE: 1.4263
+2024-10-14T22:57:18IST root         INFO     Validation: Loss: 7.4202 RMSE: 2.7240
+2024-10-14T22:57:18IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:57:19IST root         INFO     Epoch 293/500
+2024-10-14T22:57:19IST root         INFO     ----------
+2024-10-14T22:57:42IST root         INFO     Training:   Loss: 2.1350 RMSE: 1.4612
+2024-10-14T22:57:45IST root         INFO     Validation: Loss: 6.7995 RMSE: 2.6076
+2024-10-14T22:57:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:57:45IST root         INFO     Epoch 294/500
+2024-10-14T22:57:45IST root         INFO     ----------
+2024-10-14T22:58:08IST root         INFO     Training:   Loss: 1.9800 RMSE: 1.4071
+2024-10-14T22:58:11IST root         INFO     Validation: Loss: 6.8870 RMSE: 2.6243
+2024-10-14T22:58:11IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:58:11IST root         INFO     Epoch 295/500
+2024-10-14T22:58:11IST root         INFO     ----------
+2024-10-14T22:58:35IST root         INFO     Training:   Loss: 2.1538 RMSE: 1.4676
+2024-10-14T22:58:38IST root         INFO     Validation: Loss: 7.8073 RMSE: 2.7941
+2024-10-14T22:58:38IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:58:38IST root         INFO     Epoch 296/500
+2024-10-14T22:58:38IST root         INFO     ----------
+2024-10-14T22:59:01IST root         INFO     Training:   Loss: 2.0711 RMSE: 1.4391
+2024-10-14T22:59:04IST root         INFO     Validation: Loss: 6.2922 RMSE: 2.5084
+2024-10-14T22:59:04IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:59:04IST root         INFO     Epoch 297/500
+2024-10-14T22:59:04IST root         INFO     ----------
+2024-10-14T22:59:28IST root         INFO     Training:   Loss: 1.9298 RMSE: 1.3892
+2024-10-14T22:59:30IST root         INFO     Validation: Loss: 6.3603 RMSE: 2.5220
+2024-10-14T22:59:30IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:59:30IST root         INFO     Epoch 298/500
+2024-10-14T22:59:30IST root         INFO     ----------
+2024-10-14T22:59:53IST root         INFO     Training:   Loss: 2.0992 RMSE: 1.4489
+2024-10-14T22:59:56IST root         INFO     Validation: Loss: 6.6986 RMSE: 2.5882
+2024-10-14T22:59:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T22:59:56IST root         INFO     Epoch 299/500
+2024-10-14T22:59:56IST root         INFO     ----------
+2024-10-14T23:00:20IST root         INFO     Training:   Loss: 2.0183 RMSE: 1.4207
+2024-10-14T23:00:22IST root         INFO     Validation: Loss: 6.8554 RMSE: 2.6183
+2024-10-14T23:00:22IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:00:22IST root         INFO     Epoch 300/500
+2024-10-14T23:00:22IST root         INFO     ----------
+2024-10-14T23:00:46IST root         INFO     Training:   Loss: 2.1682 RMSE: 1.4725
+2024-10-14T23:00:49IST root         INFO     Validation: Loss: 6.9873 RMSE: 2.6433
+2024-10-14T23:00:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:00:49IST root         INFO     Epoch 301/500
+2024-10-14T23:00:49IST root         INFO     ----------
+2024-10-14T23:01:13IST root         INFO     Training:   Loss: 2.2225 RMSE: 1.4908
+2024-10-14T23:01:16IST root         INFO     Validation: Loss: 7.2923 RMSE: 2.7004
+2024-10-14T23:01:16IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:01:16IST root         INFO     Epoch 302/500
+2024-10-14T23:01:16IST root         INFO     ----------
+2024-10-14T23:01:39IST root         INFO     Training:   Loss: 2.4327 RMSE: 1.5597
+2024-10-14T23:01:41IST root         INFO     Validation: Loss: 11.5820 RMSE: 3.4032
+2024-10-14T23:01:41IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:01:42IST root         INFO     Epoch 303/500
+2024-10-14T23:01:42IST root         INFO     ----------
+2024-10-14T23:02:05IST root         INFO     Training:   Loss: 4.2413 RMSE: 2.0594
+2024-10-14T23:02:07IST root         INFO     Validation: Loss: 7.9619 RMSE: 2.8217
+2024-10-14T23:02:07IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:02:07IST root         INFO     Epoch 304/500
+2024-10-14T23:02:07IST root         INFO     ----------
+2024-10-14T23:02:32IST root         INFO     Training:   Loss: 3.0249 RMSE: 1.7392
+2024-10-14T23:02:34IST root         INFO     Validation: Loss: 7.1858 RMSE: 2.6806
+2024-10-14T23:02:34IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:02:34IST root         INFO     Epoch 305/500
+2024-10-14T23:02:34IST root         INFO     ----------
+2024-10-14T23:02:58IST root         INFO     Training:   Loss: 2.6339 RMSE: 1.6229
+2024-10-14T23:03:01IST root         INFO     Validation: Loss: 7.8804 RMSE: 2.8072
+2024-10-14T23:03:01IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:03:01IST root         INFO     Epoch 306/500
+2024-10-14T23:03:01IST root         INFO     ----------
+2024-10-14T23:03:24IST root         INFO     Training:   Loss: 2.4376 RMSE: 1.5613
+2024-10-14T23:03:27IST root         INFO     Validation: Loss: 7.4475 RMSE: 2.7290
+2024-10-14T23:03:27IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:03:27IST root         INFO     Epoch 307/500
+2024-10-14T23:03:27IST root         INFO     ----------
+2024-10-14T23:03:50IST root         INFO     Training:   Loss: 2.3044 RMSE: 1.5180
+2024-10-14T23:03:53IST root         INFO     Validation: Loss: 6.8149 RMSE: 2.6105
+2024-10-14T23:03:53IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:03:53IST root         INFO     Epoch 308/500
+2024-10-14T23:03:53IST root         INFO     ----------
+2024-10-14T23:04:16IST root         INFO     Training:   Loss: 2.2160 RMSE: 1.4886
+2024-10-14T23:04:18IST root         INFO     Validation: Loss: 7.4340 RMSE: 2.7265
+2024-10-14T23:04:18IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:04:19IST root         INFO     Epoch 309/500
+2024-10-14T23:04:19IST root         INFO     ----------
+2024-10-14T23:04:42IST root         INFO     Training:   Loss: 2.1580 RMSE: 1.4690
+2024-10-14T23:04:45IST root         INFO     Validation: Loss: 7.2842 RMSE: 2.6989
+2024-10-14T23:04:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:04:45IST root         INFO     Epoch 310/500
+2024-10-14T23:04:45IST root         INFO     ----------
+2024-10-14T23:05:08IST root         INFO     Training:   Loss: 2.1154 RMSE: 1.4544
+2024-10-14T23:05:10IST root         INFO     Validation: Loss: 7.1702 RMSE: 2.6777
+2024-10-14T23:05:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:05:11IST root         INFO     Epoch 311/500
+2024-10-14T23:05:11IST root         INFO     ----------
+2024-10-14T23:05:33IST root         INFO     Training:   Loss: 2.0482 RMSE: 1.4311
+2024-10-14T23:05:36IST root         INFO     Validation: Loss: 5.9979 RMSE: 2.4491
+2024-10-14T23:05:36IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:05:36IST root         INFO     Epoch 312/500
+2024-10-14T23:05:36IST root         INFO     ----------
+2024-10-14T23:05:59IST root         INFO     Training:   Loss: 2.0068 RMSE: 1.4166
+2024-10-14T23:06:01IST root         INFO     Validation: Loss: 7.6264 RMSE: 2.7616
+2024-10-14T23:06:01IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:06:02IST root         INFO     Epoch 313/500
+2024-10-14T23:06:02IST root         INFO     ----------
+2024-10-14T23:06:25IST root         INFO     Training:   Loss: 1.9400 RMSE: 1.3928
+2024-10-14T23:06:28IST root         INFO     Validation: Loss: 6.2087 RMSE: 2.4917
+2024-10-14T23:06:28IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:06:28IST root         INFO     Epoch 314/500
+2024-10-14T23:06:28IST root         INFO     ----------
+2024-10-14T23:06:51IST root         INFO     Training:   Loss: 1.8602 RMSE: 1.3639
+2024-10-14T23:06:54IST root         INFO     Validation: Loss: 7.0549 RMSE: 2.6561
+2024-10-14T23:06:54IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:06:54IST root         INFO     Epoch 315/500
+2024-10-14T23:06:54IST root         INFO     ----------
+2024-10-14T23:07:17IST root         INFO     Training:   Loss: 1.9654 RMSE: 1.4019
+2024-10-14T23:07:20IST root         INFO     Validation: Loss: 7.2261 RMSE: 2.6881
+2024-10-14T23:07:20IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:07:20IST root         INFO     Epoch 316/500
+2024-10-14T23:07:20IST root         INFO     ----------
+2024-10-14T23:07:43IST root         INFO     Training:   Loss: 2.0000 RMSE: 1.4142
+2024-10-14T23:07:46IST root         INFO     Validation: Loss: 6.6092 RMSE: 2.5708
+2024-10-14T23:07:46IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:07:46IST root         INFO     Epoch 317/500
+2024-10-14T23:07:46IST root         INFO     ----------
+2024-10-14T23:08:10IST root         INFO     Training:   Loss: 1.9145 RMSE: 1.3836
+2024-10-14T23:08:12IST root         INFO     Validation: Loss: 6.2618 RMSE: 2.5024
+2024-10-14T23:08:12IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:08:12IST root         INFO     Epoch 318/500
+2024-10-14T23:08:12IST root         INFO     ----------
+2024-10-14T23:08:36IST root         INFO     Training:   Loss: 1.9231 RMSE: 1.3868
+2024-10-14T23:08:38IST root         INFO     Validation: Loss: 7.1531 RMSE: 2.6745
+2024-10-14T23:08:38IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:08:39IST root         INFO     Epoch 319/500
+2024-10-14T23:08:39IST root         INFO     ----------
+2024-10-14T23:09:02IST root         INFO     Training:   Loss: 2.1042 RMSE: 1.4506
+2024-10-14T23:09:05IST root         INFO     Validation: Loss: 7.0331 RMSE: 2.6520
+2024-10-14T23:09:05IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:09:05IST root         INFO     Epoch 320/500
+2024-10-14T23:09:05IST root         INFO     ----------
+2024-10-14T23:09:28IST root         INFO     Training:   Loss: 1.8686 RMSE: 1.3670
+2024-10-14T23:09:30IST root         INFO     Validation: Loss: 7.4651 RMSE: 2.7322
+2024-10-14T23:09:30IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:09:31IST root         INFO     Epoch 321/500
+2024-10-14T23:09:31IST root         INFO     ----------
+2024-10-14T23:09:54IST root         INFO     Training:   Loss: 1.9215 RMSE: 1.3862
+2024-10-14T23:09:57IST root         INFO     Validation: Loss: 6.6836 RMSE: 2.5853
+2024-10-14T23:09:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:09:57IST root         INFO     Epoch 322/500
+2024-10-14T23:09:57IST root         INFO     ----------
+2024-10-14T23:10:21IST root         INFO     Training:   Loss: 2.1228 RMSE: 1.4570
+2024-10-14T23:10:23IST root         INFO     Validation: Loss: 6.9787 RMSE: 2.6417
+2024-10-14T23:10:23IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:10:23IST root         INFO     Epoch 323/500
+2024-10-14T23:10:23IST root         INFO     ----------
+2024-10-14T23:10:47IST root         INFO     Training:   Loss: 2.0199 RMSE: 1.4212
+2024-10-14T23:10:49IST root         INFO     Validation: Loss: 6.6415 RMSE: 2.5771
+2024-10-14T23:10:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:10:49IST root         INFO     Epoch 324/500
+2024-10-14T23:10:49IST root         INFO     ----------
+2024-10-14T23:11:13IST root         INFO     Training:   Loss: 2.3745 RMSE: 1.5409
+2024-10-14T23:11:15IST root         INFO     Validation: Loss: 6.3742 RMSE: 2.5247
+2024-10-14T23:11:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:11:16IST root         INFO     Epoch 325/500
+2024-10-14T23:11:16IST root         INFO     ----------
+2024-10-14T23:11:40IST root         INFO     Training:   Loss: 2.1619 RMSE: 1.4703
+2024-10-14T23:11:43IST root         INFO     Validation: Loss: 7.3801 RMSE: 2.7166
+2024-10-14T23:11:43IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:11:43IST root         INFO     Epoch 326/500
+2024-10-14T23:11:43IST root         INFO     ----------
+2024-10-14T23:12:06IST root         INFO     Training:   Loss: 1.9408 RMSE: 1.3931
+2024-10-14T23:12:09IST root         INFO     Validation: Loss: 6.5180 RMSE: 2.5530
+2024-10-14T23:12:09IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:12:09IST root         INFO     Epoch 327/500
+2024-10-14T23:12:09IST root         INFO     ----------
+2024-10-14T23:12:32IST root         INFO     Training:   Loss: 1.8720 RMSE: 1.3682
+2024-10-14T23:12:35IST root         INFO     Validation: Loss: 7.1904 RMSE: 2.6815
+2024-10-14T23:12:35IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:12:35IST root         INFO     Epoch 328/500
+2024-10-14T23:12:35IST root         INFO     ----------
+2024-10-14T23:12:58IST root         INFO     Training:   Loss: 1.9641 RMSE: 1.4015
+2024-10-14T23:13:01IST root         INFO     Validation: Loss: 6.7325 RMSE: 2.5947
+2024-10-14T23:13:01IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:13:01IST root         INFO     Epoch 329/500
+2024-10-14T23:13:01IST root         INFO     ----------
+2024-10-14T23:13:25IST root         INFO     Training:   Loss: 2.3045 RMSE: 1.5181
+2024-10-14T23:13:27IST root         INFO     Validation: Loss: 7.0206 RMSE: 2.6496
+2024-10-14T23:13:27IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:13:27IST root         INFO     Epoch 330/500
+2024-10-14T23:13:27IST root         INFO     ----------
+2024-10-14T23:13:50IST root         INFO     Training:   Loss: 2.0885 RMSE: 1.4452
+2024-10-14T23:13:53IST root         INFO     Validation: Loss: 7.0272 RMSE: 2.6509
+2024-10-14T23:13:53IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:13:53IST root         INFO     Epoch 331/500
+2024-10-14T23:13:53IST root         INFO     ----------
+2024-10-14T23:14:17IST root         INFO     Training:   Loss: 1.8972 RMSE: 1.3774
+2024-10-14T23:14:19IST root         INFO     Validation: Loss: 6.8656 RMSE: 2.6202
+2024-10-14T23:14:19IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:14:19IST root         INFO     Epoch 332/500
+2024-10-14T23:14:19IST root         INFO     ----------
+2024-10-14T23:14:42IST root         INFO     Training:   Loss: 1.8738 RMSE: 1.3689
+2024-10-14T23:14:45IST root         INFO     Validation: Loss: 7.1641 RMSE: 2.6766
+2024-10-14T23:14:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:14:45IST root         INFO     Epoch 333/500
+2024-10-14T23:14:45IST root         INFO     ----------
+2024-10-14T23:15:09IST root         INFO     Training:   Loss: 1.8683 RMSE: 1.3669
+2024-10-14T23:15:11IST root         INFO     Validation: Loss: 6.2337 RMSE: 2.4967
+2024-10-14T23:15:11IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:15:11IST root         INFO     Epoch 334/500
+2024-10-14T23:15:11IST root         INFO     ----------
+2024-10-14T23:15:34IST root         INFO     Training:   Loss: 1.8476 RMSE: 1.3593
+2024-10-14T23:15:37IST root         INFO     Validation: Loss: 6.2522 RMSE: 2.5004
+2024-10-14T23:15:37IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:15:37IST root         INFO     Epoch 335/500
+2024-10-14T23:15:37IST root         INFO     ----------
+2024-10-14T23:16:00IST root         INFO     Training:   Loss: 1.9185 RMSE: 1.3851
+2024-10-14T23:16:03IST root         INFO     Validation: Loss: 6.3675 RMSE: 2.5234
+2024-10-14T23:16:03IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:16:03IST root         INFO     Epoch 336/500
+2024-10-14T23:16:03IST root         INFO     ----------
+2024-10-14T23:16:26IST root         INFO     Training:   Loss: 1.8604 RMSE: 1.3640
+2024-10-14T23:16:29IST root         INFO     Validation: Loss: 6.5106 RMSE: 2.5516
+2024-10-14T23:16:29IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:16:29IST root         INFO     Epoch 337/500
+2024-10-14T23:16:29IST root         INFO     ----------
+2024-10-14T23:16:53IST root         INFO     Training:   Loss: 1.8380 RMSE: 1.3557
+2024-10-14T23:16:56IST root         INFO     Validation: Loss: 6.1270 RMSE: 2.4753
+2024-10-14T23:16:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:16:56IST root         INFO     Epoch 338/500
+2024-10-14T23:16:56IST root         INFO     ----------
+2024-10-14T23:17:19IST root         INFO     Training:   Loss: 1.8961 RMSE: 1.3770
+2024-10-14T23:17:21IST root         INFO     Validation: Loss: 6.5603 RMSE: 2.5613
+2024-10-14T23:17:21IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:17:22IST root         INFO     Epoch 339/500
+2024-10-14T23:17:22IST root         INFO     ----------
+2024-10-14T23:17:45IST root         INFO     Training:   Loss: 1.8553 RMSE: 1.3621
+2024-10-14T23:17:48IST root         INFO     Validation: Loss: 6.5263 RMSE: 2.5547
+2024-10-14T23:17:48IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:17:48IST root         INFO     Epoch 340/500
+2024-10-14T23:17:48IST root         INFO     ----------
+2024-10-14T23:18:11IST root         INFO     Training:   Loss: 1.9091 RMSE: 1.3817
+2024-10-14T23:18:13IST root         INFO     Validation: Loss: 5.7971 RMSE: 2.4077
+2024-10-14T23:18:13IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:18:14IST root         INFO     Epoch 341/500
+2024-10-14T23:18:14IST root         INFO     ----------
+2024-10-14T23:18:37IST root         INFO     Training:   Loss: 1.8719 RMSE: 1.3682
+2024-10-14T23:18:40IST root         INFO     Validation: Loss: 7.0303 RMSE: 2.6515
+2024-10-14T23:18:40IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:18:40IST root         INFO     Epoch 342/500
+2024-10-14T23:18:40IST root         INFO     ----------
+2024-10-14T23:19:03IST root         INFO     Training:   Loss: 1.9259 RMSE: 1.3878
+2024-10-14T23:19:06IST root         INFO     Validation: Loss: 6.6946 RMSE: 2.5874
+2024-10-14T23:19:06IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:19:06IST root         INFO     Epoch 343/500
+2024-10-14T23:19:06IST root         INFO     ----------
+2024-10-14T23:19:29IST root         INFO     Training:   Loss: 2.2651 RMSE: 1.5050
+2024-10-14T23:19:32IST root         INFO     Validation: Loss: 7.0751 RMSE: 2.6599
+2024-10-14T23:19:32IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:19:32IST root         INFO     Epoch 344/500
+2024-10-14T23:19:32IST root         INFO     ----------
+2024-10-14T23:19:55IST root         INFO     Training:   Loss: 2.0318 RMSE: 1.4254
+2024-10-14T23:19:57IST root         INFO     Validation: Loss: 7.7235 RMSE: 2.7791
+2024-10-14T23:19:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:19:58IST root         INFO     Epoch 345/500
+2024-10-14T23:19:58IST root         INFO     ----------
+2024-10-14T23:20:21IST root         INFO     Training:   Loss: 1.9074 RMSE: 1.3811
+2024-10-14T23:20:24IST root         INFO     Validation: Loss: 6.8955 RMSE: 2.6259
+2024-10-14T23:20:24IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:20:24IST root         INFO     Epoch 346/500
+2024-10-14T23:20:24IST root         INFO     ----------
+2024-10-14T23:20:46IST root         INFO     Training:   Loss: 1.8995 RMSE: 1.3782
+2024-10-14T23:20:49IST root         INFO     Validation: Loss: 6.3053 RMSE: 2.5110
+2024-10-14T23:20:49IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:20:49IST root         INFO     Epoch 347/500
+2024-10-14T23:20:49IST root         INFO     ----------
+2024-10-14T23:21:13IST root         INFO     Training:   Loss: 1.8823 RMSE: 1.3720
+2024-10-14T23:21:16IST root         INFO     Validation: Loss: 6.3292 RMSE: 2.5158
+2024-10-14T23:21:16IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:21:16IST root         INFO     Epoch 348/500
+2024-10-14T23:21:16IST root         INFO     ----------
+2024-10-14T23:21:39IST root         INFO     Training:   Loss: 1.9146 RMSE: 1.3837
+2024-10-14T23:21:41IST root         INFO     Validation: Loss: 7.7660 RMSE: 2.7867
+2024-10-14T23:21:41IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:21:42IST root         INFO     Epoch 349/500
+2024-10-14T23:21:42IST root         INFO     ----------
+2024-10-14T23:22:04IST root         INFO     Training:   Loss: 2.0205 RMSE: 1.4215
+2024-10-14T23:22:07IST root         INFO     Validation: Loss: 8.4186 RMSE: 2.9015
+2024-10-14T23:22:07IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:22:07IST root         INFO     Epoch 350/500
+2024-10-14T23:22:07IST root         INFO     ----------
+2024-10-14T23:22:31IST root         INFO     Training:   Loss: 1.9132 RMSE: 1.3832
+2024-10-14T23:22:33IST root         INFO     Validation: Loss: 6.2023 RMSE: 2.4904
+2024-10-14T23:22:33IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:22:33IST root         INFO     Epoch 351/500
+2024-10-14T23:22:33IST root         INFO     ----------
+2024-10-14T23:22:57IST root         INFO     Training:   Loss: 1.9207 RMSE: 1.3859
+2024-10-14T23:22:59IST root         INFO     Validation: Loss: 6.3322 RMSE: 2.5164
+2024-10-14T23:22:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:22:59IST root         INFO     Epoch 352/500
+2024-10-14T23:22:59IST root         INFO     ----------
+2024-10-14T23:23:23IST root         INFO     Training:   Loss: 1.8070 RMSE: 1.3442
+2024-10-14T23:23:25IST root         INFO     Validation: Loss: 7.5322 RMSE: 2.7445
+2024-10-14T23:23:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:23:25IST root         INFO     Epoch 353/500
+2024-10-14T23:23:25IST root         INFO     ----------
+2024-10-14T23:23:49IST root         INFO     Training:   Loss: 1.7564 RMSE: 1.3253
+2024-10-14T23:23:51IST root         INFO     Validation: Loss: 6.3627 RMSE: 2.5224
+2024-10-14T23:23:51IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:23:51IST root         INFO     Epoch 354/500
+2024-10-14T23:23:51IST root         INFO     ----------
+2024-10-14T23:24:14IST root         INFO     Training:   Loss: 1.8086 RMSE: 1.3449
+2024-10-14T23:24:16IST root         INFO     Validation: Loss: 8.0139 RMSE: 2.8309
+2024-10-14T23:24:16IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:24:17IST root         INFO     Epoch 355/500
+2024-10-14T23:24:17IST root         INFO     ----------
+2024-10-14T23:24:40IST root         INFO     Training:   Loss: 1.8045 RMSE: 1.3433
+2024-10-14T23:24:42IST root         INFO     Validation: Loss: 7.2732 RMSE: 2.6969
+2024-10-14T23:24:42IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:24:42IST root         INFO     Epoch 356/500
+2024-10-14T23:24:42IST root         INFO     ----------
+2024-10-14T23:25:05IST root         INFO     Training:   Loss: 1.8444 RMSE: 1.3581
+2024-10-14T23:25:08IST root         INFO     Validation: Loss: 7.2661 RMSE: 2.6956
+2024-10-14T23:25:08IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:25:08IST root         INFO     Epoch 357/500
+2024-10-14T23:25:08IST root         INFO     ----------
+2024-10-14T23:25:31IST root         INFO     Training:   Loss: 4.1375 RMSE: 2.0341
+2024-10-14T23:25:33IST root         INFO     Validation: Loss: 7.1660 RMSE: 2.6769
+2024-10-14T23:25:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:25:33IST root         INFO     Epoch 358/500
+2024-10-14T23:25:33IST root         INFO     ----------
+2024-10-14T23:25:56IST root         INFO     Training:   Loss: 2.5536 RMSE: 1.5980
+2024-10-14T23:25:59IST root         INFO     Validation: Loss: 7.2157 RMSE: 2.6862
+2024-10-14T23:25:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:25:59IST root         INFO     Epoch 359/500
+2024-10-14T23:25:59IST root         INFO     ----------
+2024-10-14T23:26:23IST root         INFO     Training:   Loss: 2.3199 RMSE: 1.5231
+2024-10-14T23:26:26IST root         INFO     Validation: Loss: 6.6882 RMSE: 2.5861
+2024-10-14T23:26:26IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:26:26IST root         INFO     Epoch 360/500
+2024-10-14T23:26:26IST root         INFO     ----------
+2024-10-14T23:26:50IST root         INFO     Training:   Loss: 2.0556 RMSE: 1.4338
+2024-10-14T23:26:53IST root         INFO     Validation: Loss: 6.2342 RMSE: 2.4968
+2024-10-14T23:26:53IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:26:53IST root         INFO     Epoch 361/500
+2024-10-14T23:26:53IST root         INFO     ----------
+2024-10-14T23:27:16IST root         INFO     Training:   Loss: 2.0374 RMSE: 1.4274
+2024-10-14T23:27:19IST root         INFO     Validation: Loss: 7.5109 RMSE: 2.7406
+2024-10-14T23:27:19IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:27:19IST root         INFO     Epoch 362/500
+2024-10-14T23:27:19IST root         INFO     ----------
+2024-10-14T23:27:43IST root         INFO     Training:   Loss: 1.9686 RMSE: 1.4031
+2024-10-14T23:27:46IST root         INFO     Validation: Loss: 6.3592 RMSE: 2.5217
+2024-10-14T23:27:46IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:27:46IST root         INFO     Epoch 363/500
+2024-10-14T23:27:46IST root         INFO     ----------
+2024-10-14T23:28:10IST root         INFO     Training:   Loss: 1.8080 RMSE: 1.3446
+2024-10-14T23:28:12IST root         INFO     Validation: Loss: 6.3101 RMSE: 2.5120
+2024-10-14T23:28:12IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:28:12IST root         INFO     Epoch 364/500
+2024-10-14T23:28:12IST root         INFO     ----------
+2024-10-14T23:28:36IST root         INFO     Training:   Loss: 1.9257 RMSE: 1.3877
+2024-10-14T23:28:38IST root         INFO     Validation: Loss: 5.6702 RMSE: 2.3812
+2024-10-14T23:28:38IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:28:39IST root         INFO     Epoch 365/500
+2024-10-14T23:28:39IST root         INFO     ----------
+2024-10-14T23:29:03IST root         INFO     Training:   Loss: 1.8834 RMSE: 1.3724
+2024-10-14T23:29:06IST root         INFO     Validation: Loss: 6.5871 RMSE: 2.5665
+2024-10-14T23:29:06IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:29:06IST root         INFO     Epoch 366/500
+2024-10-14T23:29:06IST root         INFO     ----------
+2024-10-14T23:29:29IST root         INFO     Training:   Loss: 1.8221 RMSE: 1.3499
+2024-10-14T23:29:31IST root         INFO     Validation: Loss: 7.1241 RMSE: 2.6691
+2024-10-14T23:29:31IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:29:32IST root         INFO     Epoch 367/500
+2024-10-14T23:29:32IST root         INFO     ----------
+2024-10-14T23:29:55IST root         INFO     Training:   Loss: 1.8627 RMSE: 1.3648
+2024-10-14T23:29:57IST root         INFO     Validation: Loss: 6.4171 RMSE: 2.5332
+2024-10-14T23:29:57IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:29:57IST root         INFO     Epoch 368/500
+2024-10-14T23:29:57IST root         INFO     ----------
+2024-10-14T23:30:21IST root         INFO     Training:   Loss: 1.9336 RMSE: 1.3906
+2024-10-14T23:30:23IST root         INFO     Validation: Loss: 6.7911 RMSE: 2.6060
+2024-10-14T23:30:23IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:30:23IST root         INFO     Epoch 369/500
+2024-10-14T23:30:23IST root         INFO     ----------
+2024-10-14T23:30:47IST root         INFO     Training:   Loss: 1.7506 RMSE: 1.3231
+2024-10-14T23:30:49IST root         INFO     Validation: Loss: 6.8921 RMSE: 2.6253
+2024-10-14T23:30:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:30:49IST root         INFO     Epoch 370/500
+2024-10-14T23:30:49IST root         INFO     ----------
+2024-10-14T23:31:13IST root         INFO     Training:   Loss: 1.7950 RMSE: 1.3398
+2024-10-14T23:31:16IST root         INFO     Validation: Loss: 6.4893 RMSE: 2.5474
+2024-10-14T23:31:16IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:31:16IST root         INFO     Epoch 371/500
+2024-10-14T23:31:16IST root         INFO     ----------
+2024-10-14T23:31:40IST root         INFO     Training:   Loss: 1.7569 RMSE: 1.3255
+2024-10-14T23:31:42IST root         INFO     Validation: Loss: 6.4383 RMSE: 2.5374
+2024-10-14T23:31:42IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:31:42IST root         INFO     Epoch 372/500
+2024-10-14T23:31:42IST root         INFO     ----------
+2024-10-14T23:32:06IST root         INFO     Training:   Loss: 1.7707 RMSE: 1.3307
+2024-10-14T23:32:08IST root         INFO     Validation: Loss: 6.4411 RMSE: 2.5379
+2024-10-14T23:32:08IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:32:09IST root         INFO     Epoch 373/500
+2024-10-14T23:32:09IST root         INFO     ----------
+2024-10-14T23:32:33IST root         INFO     Training:   Loss: 1.8523 RMSE: 1.3610
+2024-10-14T23:32:35IST root         INFO     Validation: Loss: 6.3149 RMSE: 2.5129
+2024-10-14T23:32:35IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:32:35IST root         INFO     Epoch 374/500
+2024-10-14T23:32:35IST root         INFO     ----------
+2024-10-14T23:32:58IST root         INFO     Training:   Loss: 1.7270 RMSE: 1.3142
+2024-10-14T23:33:01IST root         INFO     Validation: Loss: 6.0516 RMSE: 2.4600
+2024-10-14T23:33:01IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:33:01IST root         INFO     Epoch 375/500
+2024-10-14T23:33:01IST root         INFO     ----------
+2024-10-14T23:33:24IST root         INFO     Training:   Loss: 1.6846 RMSE: 1.2979
+2024-10-14T23:33:27IST root         INFO     Validation: Loss: 7.2621 RMSE: 2.6948
+2024-10-14T23:33:27IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:33:27IST root         INFO     Epoch 376/500
+2024-10-14T23:33:27IST root         INFO     ----------
+2024-10-14T23:33:50IST root         INFO     Training:   Loss: 1.7469 RMSE: 1.3217
+2024-10-14T23:33:53IST root         INFO     Validation: Loss: 6.7164 RMSE: 2.5916
+2024-10-14T23:33:53IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:33:53IST root         INFO     Epoch 377/500
+2024-10-14T23:33:53IST root         INFO     ----------
+2024-10-14T23:34:17IST root         INFO     Training:   Loss: 1.7942 RMSE: 1.3395
+2024-10-14T23:34:19IST root         INFO     Validation: Loss: 6.2488 RMSE: 2.4998
+2024-10-14T23:34:19IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:34:19IST root         INFO     Epoch 378/500
+2024-10-14T23:34:19IST root         INFO     ----------
+2024-10-14T23:34:43IST root         INFO     Training:   Loss: 1.7936 RMSE: 1.3392
+2024-10-14T23:34:45IST root         INFO     Validation: Loss: 7.1082 RMSE: 2.6661
+2024-10-14T23:34:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:34:46IST root         INFO     Epoch 379/500
+2024-10-14T23:34:46IST root         INFO     ----------
+2024-10-14T23:35:09IST root         INFO     Training:   Loss: 1.7573 RMSE: 1.3256
+2024-10-14T23:35:12IST root         INFO     Validation: Loss: 8.2127 RMSE: 2.8658
+2024-10-14T23:35:12IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:35:12IST root         INFO     Epoch 380/500
+2024-10-14T23:35:12IST root         INFO     ----------
+2024-10-14T23:35:36IST root         INFO     Training:   Loss: 1.8011 RMSE: 1.3420
+2024-10-14T23:35:39IST root         INFO     Validation: Loss: 8.2206 RMSE: 2.8672
+2024-10-14T23:35:39IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:35:39IST root         INFO     Epoch 381/500
+2024-10-14T23:35:39IST root         INFO     ----------
+2024-10-14T23:36:03IST root         INFO     Training:   Loss: 1.9201 RMSE: 1.3857
+2024-10-14T23:36:06IST root         INFO     Validation: Loss: 6.0824 RMSE: 2.4663
+2024-10-14T23:36:06IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:36:06IST root         INFO     Epoch 382/500
+2024-10-14T23:36:06IST root         INFO     ----------
+2024-10-14T23:36:30IST root         INFO     Training:   Loss: 2.0322 RMSE: 1.4256
+2024-10-14T23:36:32IST root         INFO     Validation: Loss: 6.1155 RMSE: 2.4730
+2024-10-14T23:36:32IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:36:33IST root         INFO     Epoch 383/500
+2024-10-14T23:36:33IST root         INFO     ----------
+2024-10-14T23:36:56IST root         INFO     Training:   Loss: 1.8800 RMSE: 1.3711
+2024-10-14T23:36:59IST root         INFO     Validation: Loss: 6.5095 RMSE: 2.5514
+2024-10-14T23:36:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:36:59IST root         INFO     Epoch 384/500
+2024-10-14T23:36:59IST root         INFO     ----------
+2024-10-14T23:37:23IST root         INFO     Training:   Loss: 1.9795 RMSE: 1.4070
+2024-10-14T23:37:25IST root         INFO     Validation: Loss: 7.7000 RMSE: 2.7749
+2024-10-14T23:37:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:37:26IST root         INFO     Epoch 385/500
+2024-10-14T23:37:26IST root         INFO     ----------
+2024-10-14T23:37:49IST root         INFO     Training:   Loss: 1.7911 RMSE: 1.3383
+2024-10-14T23:37:52IST root         INFO     Validation: Loss: 6.6763 RMSE: 2.5838
+2024-10-14T23:37:52IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:37:52IST root         INFO     Epoch 386/500
+2024-10-14T23:37:52IST root         INFO     ----------
+2024-10-14T23:38:17IST root         INFO     Training:   Loss: 1.8013 RMSE: 1.3421
+2024-10-14T23:38:19IST root         INFO     Validation: Loss: 6.7792 RMSE: 2.6037
+2024-10-14T23:38:19IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:38:19IST root         INFO     Epoch 387/500
+2024-10-14T23:38:19IST root         INFO     ----------
+2024-10-14T23:38:43IST root         INFO     Training:   Loss: 1.6531 RMSE: 1.2857
+2024-10-14T23:38:45IST root         INFO     Validation: Loss: 7.9537 RMSE: 2.8202
+2024-10-14T23:38:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:38:45IST root         INFO     Epoch 388/500
+2024-10-14T23:38:45IST root         INFO     ----------
+2024-10-14T23:39:09IST root         INFO     Training:   Loss: 1.7265 RMSE: 1.3140
+2024-10-14T23:39:11IST root         INFO     Validation: Loss: 5.7653 RMSE: 2.4011
+2024-10-14T23:39:11IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:39:11IST root         INFO     Epoch 389/500
+2024-10-14T23:39:11IST root         INFO     ----------
+2024-10-14T23:39:35IST root         INFO     Training:   Loss: 1.7359 RMSE: 1.3175
+2024-10-14T23:39:38IST root         INFO     Validation: Loss: 5.9577 RMSE: 2.4408
+2024-10-14T23:39:38IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:39:38IST root         INFO     Epoch 390/500
+2024-10-14T23:39:38IST root         INFO     ----------
+2024-10-14T23:40:01IST root         INFO     Training:   Loss: 1.7514 RMSE: 1.3234
+2024-10-14T23:40:04IST root         INFO     Validation: Loss: 6.5501 RMSE: 2.5593
+2024-10-14T23:40:04IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:40:04IST root         INFO     Epoch 391/500
+2024-10-14T23:40:04IST root         INFO     ----------
+2024-10-14T23:40:28IST root         INFO     Training:   Loss: 1.7592 RMSE: 1.3263
+2024-10-14T23:40:31IST root         INFO     Validation: Loss: 7.4106 RMSE: 2.7222
+2024-10-14T23:40:31IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:40:31IST root         INFO     Epoch 392/500
+2024-10-14T23:40:31IST root         INFO     ----------
+2024-10-14T23:40:54IST root         INFO     Training:   Loss: 1.8503 RMSE: 1.3603
+2024-10-14T23:40:56IST root         INFO     Validation: Loss: 6.7606 RMSE: 2.6001
+2024-10-14T23:40:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:40:57IST root         INFO     Epoch 393/500
+2024-10-14T23:40:57IST root         INFO     ----------
+2024-10-14T23:41:21IST root         INFO     Training:   Loss: 1.6811 RMSE: 1.2966
+2024-10-14T23:41:23IST root         INFO     Validation: Loss: 6.5488 RMSE: 2.5591
+2024-10-14T23:41:23IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:41:23IST root         INFO     Epoch 394/500
+2024-10-14T23:41:23IST root         INFO     ----------
+2024-10-14T23:41:47IST root         INFO     Training:   Loss: 1.8405 RMSE: 1.3566
+2024-10-14T23:41:49IST root         INFO     Validation: Loss: 7.4773 RMSE: 2.7345
+2024-10-14T23:41:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:41:50IST root         INFO     Epoch 395/500
+2024-10-14T23:41:50IST root         INFO     ----------
+2024-10-14T23:42:13IST root         INFO     Training:   Loss: 1.8747 RMSE: 1.3692
+2024-10-14T23:42:15IST root         INFO     Validation: Loss: 6.6948 RMSE: 2.5874
+2024-10-14T23:42:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:42:15IST root         INFO     Epoch 396/500
+2024-10-14T23:42:15IST root         INFO     ----------
+2024-10-14T23:42:39IST root         INFO     Training:   Loss: 1.7798 RMSE: 1.3341
+2024-10-14T23:42:41IST root         INFO     Validation: Loss: 6.6464 RMSE: 2.5781
+2024-10-14T23:42:41IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:42:42IST root         INFO     Epoch 397/500
+2024-10-14T23:42:42IST root         INFO     ----------
+2024-10-14T23:43:05IST root         INFO     Training:   Loss: 1.8537 RMSE: 1.3615
+2024-10-14T23:43:07IST root         INFO     Validation: Loss: 6.9861 RMSE: 2.6431
+2024-10-14T23:43:07IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:43:07IST root         INFO     Epoch 398/500
+2024-10-14T23:43:07IST root         INFO     ----------
+2024-10-14T23:43:30IST root         INFO     Training:   Loss: 1.7707 RMSE: 1.3307
+2024-10-14T23:43:33IST root         INFO     Validation: Loss: 6.0192 RMSE: 2.4534
+2024-10-14T23:43:33IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:43:33IST root         INFO     Epoch 399/500
+2024-10-14T23:43:33IST root         INFO     ----------
+2024-10-14T23:43:57IST root         INFO     Training:   Loss: 1.8074 RMSE: 1.3444
+2024-10-14T23:43:59IST root         INFO     Validation: Loss: 5.9510 RMSE: 2.4395
+2024-10-14T23:43:59IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:43:59IST root         INFO     Epoch 400/500
+2024-10-14T23:43:59IST root         INFO     ----------
+2024-10-14T23:44:23IST root         INFO     Training:   Loss: 1.7475 RMSE: 1.3219
+2024-10-14T23:44:25IST root         INFO     Validation: Loss: 7.2455 RMSE: 2.6917
+2024-10-14T23:44:25IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:44:26IST root         INFO     Epoch 401/500
+2024-10-14T23:44:26IST root         INFO     ----------
+2024-10-14T23:44:48IST root         INFO     Training:   Loss: 3.4877 RMSE: 1.8675
+2024-10-14T23:44:51IST root         INFO     Validation: Loss: 9.2493 RMSE: 3.0413
+2024-10-14T23:44:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:44:51IST root         INFO     Epoch 402/500
+2024-10-14T23:44:51IST root         INFO     ----------
+2024-10-14T23:45:14IST root         INFO     Training:   Loss: 2.5785 RMSE: 1.6058
+2024-10-14T23:45:17IST root         INFO     Validation: Loss: 9.1376 RMSE: 3.0228
+2024-10-14T23:45:17IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:45:17IST root         INFO     Epoch 403/500
+2024-10-14T23:45:17IST root         INFO     ----------
+2024-10-14T23:45:41IST root         INFO     Training:   Loss: 4.2165 RMSE: 2.0534
+2024-10-14T23:45:43IST root         INFO     Validation: Loss: 13.3063 RMSE: 3.6478
+2024-10-14T23:45:43IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:45:43IST root         INFO     Epoch 404/500
+2024-10-14T23:45:43IST root         INFO     ----------
+2024-10-14T23:46:07IST root         INFO     Training:   Loss: 5.3389 RMSE: 2.3106
+2024-10-14T23:46:09IST root         INFO     Validation: Loss: 7.3756 RMSE: 2.7158
+2024-10-14T23:46:09IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:46:09IST root         INFO     Epoch 405/500
+2024-10-14T23:46:09IST root         INFO     ----------
+2024-10-14T23:46:32IST root         INFO     Training:   Loss: 3.9002 RMSE: 1.9749
+2024-10-14T23:46:35IST root         INFO     Validation: Loss: 7.6436 RMSE: 2.7647
+2024-10-14T23:46:35IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:46:35IST root         INFO     Epoch 406/500
+2024-10-14T23:46:35IST root         INFO     ----------
+2024-10-14T23:46:58IST root         INFO     Training:   Loss: 3.5975 RMSE: 1.8967
+2024-10-14T23:47:00IST root         INFO     Validation: Loss: 7.0377 RMSE: 2.6529
+2024-10-14T23:47:00IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:47:01IST root         INFO     Epoch 407/500
+2024-10-14T23:47:01IST root         INFO     ----------
+2024-10-14T23:47:25IST root         INFO     Training:   Loss: 3.3490 RMSE: 1.8300
+2024-10-14T23:47:27IST root         INFO     Validation: Loss: 7.6911 RMSE: 2.7733
+2024-10-14T23:47:27IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:47:27IST root         INFO     Epoch 408/500
+2024-10-14T23:47:27IST root         INFO     ----------
+2024-10-14T23:47:51IST root         INFO     Training:   Loss: 3.3548 RMSE: 1.8316
+2024-10-14T23:47:53IST root         INFO     Validation: Loss: 6.8681 RMSE: 2.6207
+2024-10-14T23:47:53IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:47:54IST root         INFO     Epoch 409/500
+2024-10-14T23:47:54IST root         INFO     ----------
+2024-10-14T23:48:17IST root         INFO     Training:   Loss: 2.9105 RMSE: 1.7060
+2024-10-14T23:48:19IST root         INFO     Validation: Loss: 6.7263 RMSE: 2.5935
+2024-10-14T23:48:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:48:19IST root         INFO     Epoch 410/500
+2024-10-14T23:48:19IST root         INFO     ----------
+2024-10-14T23:48:43IST root         INFO     Training:   Loss: 2.9366 RMSE: 1.7137
+2024-10-14T23:48:45IST root         INFO     Validation: Loss: 6.7478 RMSE: 2.5976
+2024-10-14T23:48:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:48:46IST root         INFO     Epoch 411/500
+2024-10-14T23:48:46IST root         INFO     ----------
+2024-10-14T23:49:09IST root         INFO     Training:   Loss: 2.6909 RMSE: 1.6404
+2024-10-14T23:49:11IST root         INFO     Validation: Loss: 7.3501 RMSE: 2.7111
+2024-10-14T23:49:11IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:49:11IST root         INFO     Epoch 412/500
+2024-10-14T23:49:11IST root         INFO     ----------
+2024-10-14T23:49:34IST root         INFO     Training:   Loss: 2.7009 RMSE: 1.6434
+2024-10-14T23:49:37IST root         INFO     Validation: Loss: 7.2268 RMSE: 2.6883
+2024-10-14T23:49:37IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:49:37IST root         INFO     Epoch 413/500
+2024-10-14T23:49:37IST root         INFO     ----------
+2024-10-14T23:50:00IST root         INFO     Training:   Loss: 2.5562 RMSE: 1.5988
+2024-10-14T23:50:03IST root         INFO     Validation: Loss: 7.0041 RMSE: 2.6465
+2024-10-14T23:50:03IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:50:03IST root         INFO     Epoch 414/500
+2024-10-14T23:50:03IST root         INFO     ----------
+2024-10-14T23:50:27IST root         INFO     Training:   Loss: 2.5419 RMSE: 1.5943
+2024-10-14T23:50:29IST root         INFO     Validation: Loss: 6.7956 RMSE: 2.6068
+2024-10-14T23:50:29IST root         INFO     Early stopping...
+2024-10-14T23:50:29IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:50:30IST root         INFO     Epoch 415/500
+2024-10-14T23:50:30IST root         INFO     ----------
+2024-10-14T23:50:53IST root         INFO     Training:   Loss: 2.4561 RMSE: 1.5672
+2024-10-14T23:50:56IST root         INFO     Validation: Loss: 6.3263 RMSE: 2.5152
+2024-10-14T23:50:56IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:50:56IST root         INFO     Epoch 416/500
+2024-10-14T23:50:56IST root         INFO     ----------
+2024-10-14T23:51:19IST root         INFO     Training:   Loss: 2.5288 RMSE: 1.5902
+2024-10-14T23:51:22IST root         INFO     Validation: Loss: 7.2370 RMSE: 2.6902
+2024-10-14T23:51:22IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:51:22IST root         INFO     Epoch 417/500
+2024-10-14T23:51:22IST root         INFO     ----------
+2024-10-14T23:51:46IST root         INFO     Training:   Loss: 2.3841 RMSE: 1.5441
+2024-10-14T23:51:48IST root         INFO     Validation: Loss: 7.0990 RMSE: 2.6644
+2024-10-14T23:51:48IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:51:48IST root         INFO     Epoch 418/500
+2024-10-14T23:51:48IST root         INFO     ----------
+2024-10-14T23:52:12IST root         INFO     Training:   Loss: 2.2033 RMSE: 1.4843
+2024-10-14T23:52:14IST root         INFO     Validation: Loss: 7.3641 RMSE: 2.7137
+2024-10-14T23:52:14IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:52:14IST root         INFO     Epoch 419/500
+2024-10-14T23:52:14IST root         INFO     ----------
+2024-10-14T23:52:39IST root         INFO     Training:   Loss: 2.1939 RMSE: 1.4812
+2024-10-14T23:52:41IST root         INFO     Validation: Loss: 6.9004 RMSE: 2.6269
+2024-10-14T23:52:41IST root         INFO     Epoch complete in 0m 27s
+2024-10-14T23:52:41IST root         INFO     Epoch 420/500
+2024-10-14T23:52:41IST root         INFO     ----------
+2024-10-14T23:53:05IST root         INFO     Training:   Loss: 2.2525 RMSE: 1.5008
+2024-10-14T23:53:08IST root         INFO     Validation: Loss: 6.6490 RMSE: 2.5786
+2024-10-14T23:53:08IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:53:08IST root         INFO     Epoch 421/500
+2024-10-14T23:53:08IST root         INFO     ----------
+2024-10-14T23:53:32IST root         INFO     Training:   Loss: 2.3886 RMSE: 1.5455
+2024-10-14T23:53:34IST root         INFO     Validation: Loss: 6.8029 RMSE: 2.6082
+2024-10-14T23:53:34IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:53:34IST root         INFO     Epoch 422/500
+2024-10-14T23:53:34IST root         INFO     ----------
+2024-10-14T23:53:57IST root         INFO     Training:   Loss: 2.0227 RMSE: 1.4222
+2024-10-14T23:54:00IST root         INFO     Validation: Loss: 6.8926 RMSE: 2.6254
+2024-10-14T23:54:00IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:54:00IST root         INFO     Epoch 423/500
+2024-10-14T23:54:00IST root         INFO     ----------
+2024-10-14T23:54:24IST root         INFO     Training:   Loss: 1.9424 RMSE: 1.3937
+2024-10-14T23:54:26IST root         INFO     Validation: Loss: 6.7634 RMSE: 2.6006
+2024-10-14T23:54:26IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:54:26IST root         INFO     Epoch 424/500
+2024-10-14T23:54:26IST root         INFO     ----------
+2024-10-14T23:54:50IST root         INFO     Training:   Loss: 1.9644 RMSE: 1.4016
+2024-10-14T23:54:53IST root         INFO     Validation: Loss: 6.4516 RMSE: 2.5400
+2024-10-14T23:54:53IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:54:53IST root         INFO     Epoch 425/500
+2024-10-14T23:54:53IST root         INFO     ----------
+2024-10-14T23:55:16IST root         INFO     Training:   Loss: 2.0816 RMSE: 1.4428
+2024-10-14T23:55:18IST root         INFO     Validation: Loss: 6.8265 RMSE: 2.6128
+2024-10-14T23:55:18IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:55:18IST root         INFO     Epoch 426/500
+2024-10-14T23:55:18IST root         INFO     ----------
+2024-10-14T23:55:41IST root         INFO     Training:   Loss: 1.9950 RMSE: 1.4124
+2024-10-14T23:55:44IST root         INFO     Validation: Loss: 7.1065 RMSE: 2.6658
+2024-10-14T23:55:44IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:55:44IST root         INFO     Epoch 427/500
+2024-10-14T23:55:44IST root         INFO     ----------
+2024-10-14T23:56:07IST root         INFO     Training:   Loss: 1.8920 RMSE: 1.3755
+2024-10-14T23:56:10IST root         INFO     Validation: Loss: 6.9153 RMSE: 2.6297
+2024-10-14T23:56:10IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:56:10IST root         INFO     Epoch 428/500
+2024-10-14T23:56:10IST root         INFO     ----------
+2024-10-14T23:56:33IST root         INFO     Training:   Loss: 2.0011 RMSE: 1.4146
+2024-10-14T23:56:36IST root         INFO     Validation: Loss: 6.8330 RMSE: 2.6140
+2024-10-14T23:56:36IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:56:36IST root         INFO     Epoch 429/500
+2024-10-14T23:56:36IST root         INFO     ----------
+2024-10-14T23:57:00IST root         INFO     Training:   Loss: 1.8711 RMSE: 1.3679
+2024-10-14T23:57:02IST root         INFO     Validation: Loss: 7.7990 RMSE: 2.7927
+2024-10-14T23:57:02IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:57:02IST root         INFO     Epoch 430/500
+2024-10-14T23:57:02IST root         INFO     ----------
+2024-10-14T23:57:26IST root         INFO     Training:   Loss: 1.8733 RMSE: 1.3687
+2024-10-14T23:57:28IST root         INFO     Validation: Loss: 6.4950 RMSE: 2.5485
+2024-10-14T23:57:28IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:57:29IST root         INFO     Epoch 431/500
+2024-10-14T23:57:29IST root         INFO     ----------
+2024-10-14T23:57:52IST root         INFO     Training:   Loss: 1.7830 RMSE: 1.3353
+2024-10-14T23:57:55IST root         INFO     Validation: Loss: 6.0299 RMSE: 2.4556
+2024-10-14T23:57:55IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:57:55IST root         INFO     Epoch 432/500
+2024-10-14T23:57:55IST root         INFO     ----------
+2024-10-14T23:58:19IST root         INFO     Training:   Loss: 1.7655 RMSE: 1.3287
+2024-10-14T23:58:21IST root         INFO     Validation: Loss: 7.0166 RMSE: 2.6489
+2024-10-14T23:58:21IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:58:21IST root         INFO     Epoch 433/500
+2024-10-14T23:58:21IST root         INFO     ----------
+2024-10-14T23:58:45IST root         INFO     Training:   Loss: 1.9103 RMSE: 1.3821
+2024-10-14T23:58:48IST root         INFO     Validation: Loss: 7.3094 RMSE: 2.7036
+2024-10-14T23:58:48IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:58:48IST root         INFO     Epoch 434/500
+2024-10-14T23:58:48IST root         INFO     ----------
+2024-10-14T23:59:11IST root         INFO     Training:   Loss: 1.8228 RMSE: 1.3501
+2024-10-14T23:59:14IST root         INFO     Validation: Loss: 6.6021 RMSE: 2.5694
+2024-10-14T23:59:14IST root         INFO     Epoch complete in 0m 26s
+2024-10-14T23:59:14IST root         INFO     Epoch 435/500
+2024-10-14T23:59:14IST root         INFO     ----------
+2024-10-14T23:59:37IST root         INFO     Training:   Loss: 1.7456 RMSE: 1.3212
+2024-10-14T23:59:40IST root         INFO     Validation: Loss: 6.7632 RMSE: 2.6006
+2024-10-14T23:59:40IST root         INFO     Epoch complete in 0m 25s
+2024-10-14T23:59:40IST root         INFO     Epoch 436/500
+2024-10-14T23:59:40IST root         INFO     ----------
+2024-10-15T00:00:03IST root         INFO     Training:   Loss: 1.6885 RMSE: 1.2994
+2024-10-15T00:00:05IST root         INFO     Validation: Loss: 6.8616 RMSE: 2.6195
+2024-10-15T00:00:05IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:00:06IST root         INFO     Epoch 437/500
+2024-10-15T00:00:06IST root         INFO     ----------
+2024-10-15T00:00:29IST root         INFO     Training:   Loss: 1.7545 RMSE: 1.3246
+2024-10-15T00:00:32IST root         INFO     Validation: Loss: 6.7478 RMSE: 2.5977
+2024-10-15T00:00:32IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:00:32IST root         INFO     Epoch 438/500
+2024-10-15T00:00:32IST root         INFO     ----------
+2024-10-15T00:00:55IST root         INFO     Training:   Loss: 1.7683 RMSE: 1.3298
+2024-10-15T00:00:57IST root         INFO     Validation: Loss: 6.6974 RMSE: 2.5879
+2024-10-15T00:00:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:00:58IST root         INFO     Epoch 439/500
+2024-10-15T00:00:58IST root         INFO     ----------
+2024-10-15T00:01:21IST root         INFO     Training:   Loss: 1.7799 RMSE: 1.3341
+2024-10-15T00:01:24IST root         INFO     Validation: Loss: 8.4979 RMSE: 2.9151
+2024-10-15T00:01:24IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:01:24IST root         INFO     Epoch 440/500
+2024-10-15T00:01:24IST root         INFO     ----------
+2024-10-15T00:01:47IST root         INFO     Training:   Loss: 1.8644 RMSE: 1.3654
+2024-10-15T00:01:50IST root         INFO     Validation: Loss: 6.2506 RMSE: 2.5001
+2024-10-15T00:01:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:01:50IST root         INFO     Epoch 441/500
+2024-10-15T00:01:50IST root         INFO     ----------
+2024-10-15T00:02:14IST root         INFO     Training:   Loss: 1.8799 RMSE: 1.3711
+2024-10-15T00:02:17IST root         INFO     Validation: Loss: 7.2789 RMSE: 2.6979
+2024-10-15T00:02:17IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:02:17IST root         INFO     Epoch 442/500
+2024-10-15T00:02:17IST root         INFO     ----------
+2024-10-15T00:02:41IST root         INFO     Training:   Loss: 1.7143 RMSE: 1.3093
+2024-10-15T00:02:44IST root         INFO     Validation: Loss: 7.1783 RMSE: 2.6792
+2024-10-15T00:02:44IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:02:44IST root         INFO     Epoch 443/500
+2024-10-15T00:02:44IST root         INFO     ----------
+2024-10-15T00:03:07IST root         INFO     Training:   Loss: 1.6919 RMSE: 1.3007
+2024-10-15T00:03:09IST root         INFO     Validation: Loss: 6.6372 RMSE: 2.5763
+2024-10-15T00:03:09IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:03:09IST root         INFO     Epoch 444/500
+2024-10-15T00:03:09IST root         INFO     ----------
+2024-10-15T00:03:33IST root         INFO     Training:   Loss: 1.7765 RMSE: 1.3328
+2024-10-15T00:03:35IST root         INFO     Validation: Loss: 6.3558 RMSE: 2.5211
+2024-10-15T00:03:35IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:03:36IST root         INFO     Epoch 445/500
+2024-10-15T00:03:36IST root         INFO     ----------
+2024-10-15T00:03:59IST root         INFO     Training:   Loss: 1.7139 RMSE: 1.3092
+2024-10-15T00:04:02IST root         INFO     Validation: Loss: 7.2331 RMSE: 2.6894
+2024-10-15T00:04:02IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:04:02IST root         INFO     Epoch 446/500
+2024-10-15T00:04:02IST root         INFO     ----------
+2024-10-15T00:04:25IST root         INFO     Training:   Loss: 1.6582 RMSE: 1.2877
+2024-10-15T00:04:28IST root         INFO     Validation: Loss: 7.2682 RMSE: 2.6960
+2024-10-15T00:04:28IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:04:28IST root         INFO     Epoch 447/500
+2024-10-15T00:04:28IST root         INFO     ----------
+2024-10-15T00:04:51IST root         INFO     Training:   Loss: 1.7713 RMSE: 1.3309
+2024-10-15T00:04:54IST root         INFO     Validation: Loss: 8.0322 RMSE: 2.8341
+2024-10-15T00:04:54IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:04:54IST root         INFO     Epoch 448/500
+2024-10-15T00:04:54IST root         INFO     ----------
+2024-10-15T00:05:16IST root         INFO     Training:   Loss: 1.8004 RMSE: 1.3418
+2024-10-15T00:05:19IST root         INFO     Validation: Loss: 6.9591 RMSE: 2.6380
+2024-10-15T00:05:19IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:05:19IST root         INFO     Epoch 449/500
+2024-10-15T00:05:19IST root         INFO     ----------
+2024-10-15T00:05:43IST root         INFO     Training:   Loss: 1.6645 RMSE: 1.2902
+2024-10-15T00:05:45IST root         INFO     Validation: Loss: 7.1621 RMSE: 2.6762
+2024-10-15T00:05:45IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:05:45IST root         INFO     Epoch 450/500
+2024-10-15T00:05:45IST root         INFO     ----------
+2024-10-15T00:06:08IST root         INFO     Training:   Loss: 1.6657 RMSE: 1.2906
+2024-10-15T00:06:10IST root         INFO     Validation: Loss: 7.4083 RMSE: 2.7218
+2024-10-15T00:06:10IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:06:11IST root         INFO     Epoch 451/500
+2024-10-15T00:06:11IST root         INFO     ----------
+2024-10-15T00:06:34IST root         INFO     Training:   Loss: 1.8073 RMSE: 1.3444
+2024-10-15T00:06:37IST root         INFO     Validation: Loss: 7.1421 RMSE: 2.6725
+2024-10-15T00:06:37IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:06:37IST root         INFO     Epoch 452/500
+2024-10-15T00:06:37IST root         INFO     ----------
+2024-10-15T00:07:00IST root         INFO     Training:   Loss: 1.6504 RMSE: 1.2847
+2024-10-15T00:07:03IST root         INFO     Validation: Loss: 6.4067 RMSE: 2.5312
+2024-10-15T00:07:03IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:07:03IST root         INFO     Epoch 453/500
+2024-10-15T00:07:03IST root         INFO     ----------
+2024-10-15T00:07:27IST root         INFO     Training:   Loss: 1.7386 RMSE: 1.3186
+2024-10-15T00:07:29IST root         INFO     Validation: Loss: 6.8555 RMSE: 2.6183
+2024-10-15T00:07:29IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:07:29IST root         INFO     Epoch 454/500
+2024-10-15T00:07:29IST root         INFO     ----------
+2024-10-15T00:07:52IST root         INFO     Training:   Loss: 1.7222 RMSE: 1.3123
+2024-10-15T00:07:54IST root         INFO     Validation: Loss: 6.7054 RMSE: 2.5895
+2024-10-15T00:07:54IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:07:55IST root         INFO     Epoch 455/500
+2024-10-15T00:07:55IST root         INFO     ----------
+2024-10-15T00:08:18IST root         INFO     Training:   Loss: 1.6564 RMSE: 1.2870
+2024-10-15T00:08:21IST root         INFO     Validation: Loss: 6.4560 RMSE: 2.5409
+2024-10-15T00:08:21IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:08:21IST root         INFO     Epoch 456/500
+2024-10-15T00:08:21IST root         INFO     ----------
+2024-10-15T00:08:45IST root         INFO     Training:   Loss: 1.7482 RMSE: 1.3222
+2024-10-15T00:08:47IST root         INFO     Validation: Loss: 6.9534 RMSE: 2.6369
+2024-10-15T00:08:47IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:08:47IST root         INFO     Epoch 457/500
+2024-10-15T00:08:47IST root         INFO     ----------
+2024-10-15T00:09:13IST root         INFO     Training:   Loss: 1.7513 RMSE: 1.3234
+2024-10-15T00:09:15IST root         INFO     Validation: Loss: 6.6679 RMSE: 2.5822
+2024-10-15T00:09:15IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:09:15IST root         INFO     Epoch 458/500
+2024-10-15T00:09:15IST root         INFO     ----------
+2024-10-15T00:09:39IST root         INFO     Training:   Loss: 1.6871 RMSE: 1.2989
+2024-10-15T00:09:41IST root         INFO     Validation: Loss: 7.1075 RMSE: 2.6660
+2024-10-15T00:09:41IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:09:42IST root         INFO     Epoch 459/500
+2024-10-15T00:09:42IST root         INFO     ----------
+2024-10-15T00:10:06IST root         INFO     Training:   Loss: 1.9465 RMSE: 1.3952
+2024-10-15T00:10:08IST root         INFO     Validation: Loss: 6.5154 RMSE: 2.5525
+2024-10-15T00:10:08IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:10:08IST root         INFO     Epoch 460/500
+2024-10-15T00:10:08IST root         INFO     ----------
+2024-10-15T00:10:32IST root         INFO     Training:   Loss: 1.7923 RMSE: 1.3388
+2024-10-15T00:10:34IST root         INFO     Validation: Loss: 6.1936 RMSE: 2.4887
+2024-10-15T00:10:34IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:10:34IST root         INFO     Epoch 461/500
+2024-10-15T00:10:34IST root         INFO     ----------
+2024-10-15T00:10:58IST root         INFO     Training:   Loss: 1.6526 RMSE: 1.2855
+2024-10-15T00:11:00IST root         INFO     Validation: Loss: 6.7616 RMSE: 2.6003
+2024-10-15T00:11:00IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:11:00IST root         INFO     Epoch 462/500
+2024-10-15T00:11:00IST root         INFO     ----------
+2024-10-15T00:11:23IST root         INFO     Training:   Loss: 1.6737 RMSE: 1.2937
+2024-10-15T00:11:26IST root         INFO     Validation: Loss: 6.9455 RMSE: 2.6354
+2024-10-15T00:11:26IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:11:26IST root         INFO     Epoch 463/500
+2024-10-15T00:11:26IST root         INFO     ----------
+2024-10-15T00:11:50IST root         INFO     Training:   Loss: 1.6445 RMSE: 1.2824
+2024-10-15T00:11:52IST root         INFO     Validation: Loss: 6.4689 RMSE: 2.5434
+2024-10-15T00:11:52IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:11:52IST root         INFO     Epoch 464/500
+2024-10-15T00:11:52IST root         INFO     ----------
+2024-10-15T00:12:16IST root         INFO     Training:   Loss: 1.7930 RMSE: 1.3390
+2024-10-15T00:12:18IST root         INFO     Validation: Loss: 6.5778 RMSE: 2.5647
+2024-10-15T00:12:18IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:12:19IST root         INFO     Epoch 465/500
+2024-10-15T00:12:19IST root         INFO     ----------
+2024-10-15T00:12:42IST root         INFO     Training:   Loss: 1.6789 RMSE: 1.2957
+2024-10-15T00:12:45IST root         INFO     Validation: Loss: 6.8527 RMSE: 2.6178
+2024-10-15T00:12:45IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:12:45IST root         INFO     Epoch 466/500
+2024-10-15T00:12:45IST root         INFO     ----------
+2024-10-15T00:13:09IST root         INFO     Training:   Loss: 1.7720 RMSE: 1.3312
+2024-10-15T00:13:12IST root         INFO     Validation: Loss: 6.8657 RMSE: 2.6202
+2024-10-15T00:13:12IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:13:13IST root         INFO     Epoch 467/500
+2024-10-15T00:13:13IST root         INFO     ----------
+2024-10-15T00:13:36IST root         INFO     Training:   Loss: 1.7364 RMSE: 1.3177
+2024-10-15T00:13:39IST root         INFO     Validation: Loss: 6.8510 RMSE: 2.6174
+2024-10-15T00:13:39IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:13:39IST root         INFO     Epoch 468/500
+2024-10-15T00:13:39IST root         INFO     ----------
+2024-10-15T00:14:02IST root         INFO     Training:   Loss: 1.6671 RMSE: 1.2912
+2024-10-15T00:14:04IST root         INFO     Validation: Loss: 7.1155 RMSE: 2.6675
+2024-10-15T00:14:04IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:14:05IST root         INFO     Epoch 469/500
+2024-10-15T00:14:05IST root         INFO     ----------
+2024-10-15T00:14:28IST root         INFO     Training:   Loss: 1.7405 RMSE: 1.3193
+2024-10-15T00:14:31IST root         INFO     Validation: Loss: 6.9447 RMSE: 2.6353
+2024-10-15T00:14:31IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:14:31IST root         INFO     Epoch 470/500
+2024-10-15T00:14:31IST root         INFO     ----------
+2024-10-15T00:14:54IST root         INFO     Training:   Loss: 1.6142 RMSE: 1.2705
+2024-10-15T00:14:57IST root         INFO     Validation: Loss: 6.3740 RMSE: 2.5247
+2024-10-15T00:14:57IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:14:57IST root         INFO     Epoch 471/500
+2024-10-15T00:14:57IST root         INFO     ----------
+2024-10-15T00:15:20IST root         INFO     Training:   Loss: 1.6901 RMSE: 1.3000
+2024-10-15T00:15:23IST root         INFO     Validation: Loss: 6.2005 RMSE: 2.4901
+2024-10-15T00:15:23IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:15:23IST root         INFO     Epoch 472/500
+2024-10-15T00:15:23IST root         INFO     ----------
+2024-10-15T00:15:46IST root         INFO     Training:   Loss: 1.7324 RMSE: 1.3162
+2024-10-15T00:15:49IST root         INFO     Validation: Loss: 6.5296 RMSE: 2.5553
+2024-10-15T00:15:49IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:15:49IST root         INFO     Epoch 473/500
+2024-10-15T00:15:49IST root         INFO     ----------
+2024-10-15T00:16:13IST root         INFO     Training:   Loss: 1.6625 RMSE: 1.2894
+2024-10-15T00:16:15IST root         INFO     Validation: Loss: 6.0842 RMSE: 2.4666
+2024-10-15T00:16:15IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:16:15IST root         INFO     Epoch 474/500
+2024-10-15T00:16:15IST root         INFO     ----------
+2024-10-15T00:16:39IST root         INFO     Training:   Loss: 1.5704 RMSE: 1.2532
+2024-10-15T00:16:42IST root         INFO     Validation: Loss: 7.1161 RMSE: 2.6676
+2024-10-15T00:16:42IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:16:42IST root         INFO     Epoch 475/500
+2024-10-15T00:16:42IST root         INFO     ----------
+2024-10-15T00:17:05IST root         INFO     Training:   Loss: 1.5977 RMSE: 1.2640
+2024-10-15T00:17:08IST root         INFO     Validation: Loss: 7.0901 RMSE: 2.6627
+2024-10-15T00:17:08IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:17:08IST root         INFO     Epoch 476/500
+2024-10-15T00:17:08IST root         INFO     ----------
+2024-10-15T00:17:31IST root         INFO     Training:   Loss: 1.6403 RMSE: 1.2807
+2024-10-15T00:17:33IST root         INFO     Validation: Loss: 6.4850 RMSE: 2.5466
+2024-10-15T00:17:33IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:17:34IST root         INFO     Epoch 477/500
+2024-10-15T00:17:34IST root         INFO     ----------
+2024-10-15T00:17:57IST root         INFO     Training:   Loss: 1.6557 RMSE: 1.2867
+2024-10-15T00:18:00IST root         INFO     Validation: Loss: 7.1492 RMSE: 2.6738
+2024-10-15T00:18:00IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:18:00IST root         INFO     Epoch 478/500
+2024-10-15T00:18:00IST root         INFO     ----------
+2024-10-15T00:18:23IST root         INFO     Training:   Loss: 1.6246 RMSE: 1.2746
+2024-10-15T00:18:25IST root         INFO     Validation: Loss: 7.3904 RMSE: 2.7185
+2024-10-15T00:18:25IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:18:26IST root         INFO     Epoch 479/500
+2024-10-15T00:18:26IST root         INFO     ----------
+2024-10-15T00:18:48IST root         INFO     Training:   Loss: 1.5900 RMSE: 1.2609
+2024-10-15T00:18:51IST root         INFO     Validation: Loss: 7.7201 RMSE: 2.7785
+2024-10-15T00:18:51IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:18:51IST root         INFO     Epoch 480/500
+2024-10-15T00:18:51IST root         INFO     ----------
+2024-10-15T00:19:14IST root         INFO     Training:   Loss: 1.6740 RMSE: 1.2938
+2024-10-15T00:19:16IST root         INFO     Validation: Loss: 7.8924 RMSE: 2.8093
+2024-10-15T00:19:16IST root         INFO     Epoch complete in 0m 25s
+2024-10-15T00:19:17IST root         INFO     Epoch 481/500
+2024-10-15T00:19:17IST root         INFO     ----------
+2024-10-15T00:19:40IST root         INFO     Training:   Loss: 1.6172 RMSE: 1.2717
+2024-10-15T00:19:42IST root         INFO     Validation: Loss: 7.1313 RMSE: 2.6705
+2024-10-15T00:19:42IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:19:42IST root         INFO     Epoch 482/500
+2024-10-15T00:19:42IST root         INFO     ----------
+2024-10-15T00:20:06IST root         INFO     Training:   Loss: 1.6108 RMSE: 1.2692
+2024-10-15T00:20:09IST root         INFO     Validation: Loss: 7.2018 RMSE: 2.6836
+2024-10-15T00:20:09IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:20:09IST root         INFO     Epoch 483/500
+2024-10-15T00:20:09IST root         INFO     ----------
+2024-10-15T00:20:33IST root         INFO     Training:   Loss: 2.5700 RMSE: 1.6031
+2024-10-15T00:20:35IST root         INFO     Validation: Loss: 7.0653 RMSE: 2.6581
+2024-10-15T00:20:35IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:20:35IST root         INFO     Epoch 484/500
+2024-10-15T00:20:35IST root         INFO     ----------
+2024-10-15T00:20:59IST root         INFO     Training:   Loss: 1.9806 RMSE: 1.4073
+2024-10-15T00:21:01IST root         INFO     Validation: Loss: 7.5555 RMSE: 2.7487
+2024-10-15T00:21:01IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:21:02IST root         INFO     Epoch 485/500
+2024-10-15T00:21:02IST root         INFO     ----------
+2024-10-15T00:21:26IST root         INFO     Training:   Loss: 1.7584 RMSE: 1.3260
+2024-10-15T00:21:28IST root         INFO     Validation: Loss: 6.8745 RMSE: 2.6219
+2024-10-15T00:21:28IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:21:28IST root         INFO     Epoch 486/500
+2024-10-15T00:21:28IST root         INFO     ----------
+2024-10-15T00:21:52IST root         INFO     Training:   Loss: 1.6716 RMSE: 1.2929
+2024-10-15T00:21:54IST root         INFO     Validation: Loss: 5.9369 RMSE: 2.4366
+2024-10-15T00:21:54IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:21:55IST root         INFO     Epoch 487/500
+2024-10-15T00:21:55IST root         INFO     ----------
+2024-10-15T00:22:19IST root         INFO     Training:   Loss: 1.5831 RMSE: 1.2582
+2024-10-15T00:22:21IST root         INFO     Validation: Loss: 6.7172 RMSE: 2.5918
+2024-10-15T00:22:21IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:22:21IST root         INFO     Epoch 488/500
+2024-10-15T00:22:21IST root         INFO     ----------
+2024-10-15T00:22:44IST root         INFO     Training:   Loss: 1.6501 RMSE: 1.2846
+2024-10-15T00:22:47IST root         INFO     Validation: Loss: 6.3603 RMSE: 2.5220
+2024-10-15T00:22:47IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:22:47IST root         INFO     Epoch 489/500
+2024-10-15T00:22:47IST root         INFO     ----------
+2024-10-15T00:23:11IST root         INFO     Training:   Loss: 1.6519 RMSE: 1.2853
+2024-10-15T00:23:13IST root         INFO     Validation: Loss: 7.0043 RMSE: 2.6466
+2024-10-15T00:23:13IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:23:13IST root         INFO     Epoch 490/500
+2024-10-15T00:23:13IST root         INFO     ----------
+2024-10-15T00:23:37IST root         INFO     Training:   Loss: 1.6375 RMSE: 1.2797
+2024-10-15T00:23:40IST root         INFO     Validation: Loss: 7.5136 RMSE: 2.7411
+2024-10-15T00:23:40IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:23:40IST root         INFO     Epoch 491/500
+2024-10-15T00:23:40IST root         INFO     ----------
+2024-10-15T00:24:04IST root         INFO     Training:   Loss: 1.5087 RMSE: 1.2283
+2024-10-15T00:24:06IST root         INFO     Validation: Loss: 6.2830 RMSE: 2.5066
+2024-10-15T00:24:06IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:24:06IST root         INFO     Epoch 492/500
+2024-10-15T00:24:06IST root         INFO     ----------
+2024-10-15T00:24:29IST root         INFO     Training:   Loss: 1.4883 RMSE: 1.2200
+2024-10-15T00:24:32IST root         INFO     Validation: Loss: 6.8671 RMSE: 2.6205
+2024-10-15T00:24:32IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:24:32IST root         INFO     Epoch 493/500
+2024-10-15T00:24:32IST root         INFO     ----------
+2024-10-15T00:24:56IST root         INFO     Training:   Loss: 1.6826 RMSE: 1.2972
+2024-10-15T00:24:58IST root         INFO     Validation: Loss: 7.3379 RMSE: 2.7089
+2024-10-15T00:24:58IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:24:58IST root         INFO     Epoch 494/500
+2024-10-15T00:24:58IST root         INFO     ----------
+2024-10-15T00:25:21IST root         INFO     Training:   Loss: 1.6439 RMSE: 1.2821
+2024-10-15T00:25:24IST root         INFO     Validation: Loss: 7.7505 RMSE: 2.7840
+2024-10-15T00:25:24IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:25:24IST root         INFO     Epoch 495/500
+2024-10-15T00:25:24IST root         INFO     ----------
+2024-10-15T00:25:47IST root         INFO     Training:   Loss: 1.5142 RMSE: 1.2305
+2024-10-15T00:25:50IST root         INFO     Validation: Loss: 7.3409 RMSE: 2.7094
+2024-10-15T00:25:50IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:25:50IST root         INFO     Epoch 496/500
+2024-10-15T00:25:50IST root         INFO     ----------
+2024-10-15T00:26:14IST root         INFO     Training:   Loss: 1.5011 RMSE: 1.2252
+2024-10-15T00:26:17IST root         INFO     Validation: Loss: 6.3961 RMSE: 2.5291
+2024-10-15T00:26:17IST root         INFO     Epoch complete in 0m 27s
+2024-10-15T00:26:17IST root         INFO     Epoch 497/500
+2024-10-15T00:26:17IST root         INFO     ----------
+2024-10-15T00:26:41IST root         INFO     Training:   Loss: 1.5794 RMSE: 1.2567
+2024-10-15T00:26:44IST root         INFO     Validation: Loss: 6.5341 RMSE: 2.5562
+2024-10-15T00:26:44IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:26:44IST root         INFO     Epoch 498/500
+2024-10-15T00:26:44IST root         INFO     ----------
+2024-10-15T00:27:07IST root         INFO     Training:   Loss: 1.6367 RMSE: 1.2794
+2024-10-15T00:27:10IST root         INFO     Validation: Loss: 7.6743 RMSE: 2.7703
+2024-10-15T00:27:10IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:27:10IST root         INFO     Epoch 499/500
+2024-10-15T00:27:10IST root         INFO     ----------
+2024-10-15T00:27:34IST root         INFO     Training:   Loss: 1.6367 RMSE: 1.2793
+2024-10-15T00:27:36IST root         INFO     Validation: Loss: 6.6447 RMSE: 2.5777
+2024-10-15T00:27:36IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:27:36IST root         INFO     Epoch 500/500
+2024-10-15T00:27:36IST root         INFO     ----------
+2024-10-15T00:27:59IST root         INFO     Training:   Loss: 1.5212 RMSE: 1.2334
+2024-10-15T00:28:02IST root         INFO     Validation: Loss: 7.5395 RMSE: 2.7458
+2024-10-15T00:28:02IST root         INFO     Epoch complete in 0m 26s
+2024-10-15T00:28:02IST root         INFO     Training complete in 3h 35m 1s
+2024-10-15T00:28:02IST root         INFO     Best Val Loss: 5.6702 RMSE: 2.3812
