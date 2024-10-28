@@ -13,6 +13,10 @@ Clone this repository and navigate into it:
 git clone https://github.com/shiv57107/IPR_Project.git
 cd IPR_Project
 ```
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 ### Create Directories
 
 ``` bash
@@ -54,7 +58,6 @@ Trained weights can be accessed here: [Gdrive](https://drive.google.com/file/d/1
 
 ## Citation
 
-If you use this work in your research, please cite the following paper:
 
 ```bibtex
 @inproceedings{
