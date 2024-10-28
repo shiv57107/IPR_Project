@@ -58,19 +58,19 @@ nyu = NyuV2(os.path.join(data_path, 'train'), transform=transform)
 dataloader = data.DataLoader(nyu, batch_size=1, shuffle=True, num_workers=6)
 
 # Load the modified ResNet weights and initialize DEN
-print("Loading DEN model with the modified ResNet weights...")
-den = DEN()
-den.load_state_dict(torch.load(resnet_wts))  # Load the pretrained ResNet weights into DEN
-den = den.to(device)
-den.eval()
-print("DEN has been successfully loaded")
+#print("Loading DEN model with the modified ResNet weights...")
+#den = DEN()
+#den.load_state_dict(torch.load(resnet_wts))  # Load the pretrained ResNet weights into DEN
+#den = den.to(device)
+#den.eval()
+#print("DEN has been successfully loaded")
 
 # Initialize FDC model and perform forward pass
-fdc_model = fdc.FDC(den)
-f_m_hat, f = fdc_model.forward(dataloader)
+#fdc_model = fdc.FDC(den)
+#f_m_hat, f = fdc_model.forward(dataloader)
 
 # Fit the FDC model and save the weights
-fdc_model.fit(f_m_hat, f)
-fdc_model.save_weights('./models/FDC/den_dbe/')
+#fdc_model.fit(f_m_hat, f)
+#fdc_model.save_weights('./models/FDC/den_dbe/')
 
-print("FDC model has been trained and weights saved.")
+#print("FDC model has been trained and weights saved.")
