@@ -13,10 +13,6 @@ Clone this repository and navigate into it:
 git clone https://github.com/shiv57107/IPR_Project.git
 cd IPR_Project
 ```
-### Install Dependencies
-```bash
-pip install -r requirements.txt
-```
 ### Create Directories
 
 ``` bash
