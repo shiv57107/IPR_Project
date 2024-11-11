@@ -1,5 +1,5 @@
-# from torch.nn import Module
-# from torch.nn import functional as F
+from torch.nn import Module
+from torch.nn import functional as F
 
 
 # class DBELoss(Module):
@@ -16,9 +16,6 @@
 #         dbe = 0.5 * F.mse_loss(g_d_hat, g_d, reduction='sum')
         
 #         return dbe
-from torch.nn import Module
-from torch.nn import functional as F
-
 class DBELoss(Module):
     def __init__(self, a1_base=1.5, a2_base=-0.1, epsilon=1e-6):
         super(DBELoss, self).__init__()
